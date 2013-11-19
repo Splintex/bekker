@@ -1,0 +1,61 @@
+.big-slider
+    position: relative
+    height: 361px
+    background: $yellow url(../img/slider-bg.jpg) 0 0 repeat-x
+    +background-size(100%,100%)
+    .cycle-slideshow
+        height: 100%
+.big-slider__item
+    position: relative
+    width: 100%     
+    +clr
+    img
+        position: absolute
+        top: 0
+        right: 0
+    p
+        margin: 14px 0 0 22px
+        +med
+        font-size: 18px
+    .l-container
+        position: relative
+.big-slider__title-wrap
+    display: inline-block
+    margin-top: 90px
+    padding: 15px 35px 15px 20px 
+    background: #000 
+    color: $yellow 
+    +med
+    font-size: 18px
+.big-slider__title
+    margin-top: 5px
+    +bold
+    font-size: 36px
+    font-weight: normal
+.big-slider__nav
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    .l-container
+        position: relative
+        height: 100%
+        z-index: 400
+.big-slider__prev,
+.big-slider__next
+    position: absolute
+    top: 50%
+    margin-top: -32px
+.big-slider__prev
+    left: 0
+    +s(arr1)
+.big-slider__next
+    right: 0
+    +s(arr2)
+        
+.big-slider__wrap
+    padding-left: 65px
+    
+.banner
+    margin: 30px 0
