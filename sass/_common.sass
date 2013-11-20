@@ -182,6 +182,7 @@ a
 	
 .header__phones
 	float: left
+	min-width: 200px
 	margin-left: 64px
 	+clr
 	.icon-phone
@@ -189,11 +190,12 @@ a
 		margin-right: 15px
 		+s(phone)
 .header__phones-item
-	overflow: hidden
+	//float: left
 	color: $white
 	font-size: 16px
 	font-weight: bold 
 	padding-bottom: 4px
+	overflow: hidden
 	div
 		margin-top: 4px
 		&:first-child
@@ -225,7 +227,7 @@ a
 		background: #a80716
 		+g(#9a202b, #900a16)
 .header__busket-info
-	overflow: hidden
+	float: left
 	strong
 		display: block
 		font-size: 16px
