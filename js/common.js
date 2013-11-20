@@ -14,13 +14,16 @@ $(document).ready(function() {
     // });
 
     $('.js-cycle').each(function(){
+        var cycle_prev = $(this).parent().find(".js-prev");
+        var cycle_next = $(this).parent().find(".js-next");
+        var pager = $(this).parent().parent().find(".js-pager");
         $(this).cycle({
             speed: 600,
             fx: "carousel",
             timeout: 0,
             prev: cycle_prev,
             next: cycle_next,
-
+            pager: pager,
         });
 
     });
