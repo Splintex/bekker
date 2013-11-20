@@ -31,7 +31,7 @@ $break-large: 1180px;
 	}
 }
 
-//+font(black, cytiapro-black-webfont)
+//+font(black, cytiapro-black-webfont)  
 
 // ROTATE
 @mixin rotate($deg: 0, $m11: 0, $m12: 0, $m21: 0, $m22: 0) {
@@ -201,7 +201,7 @@ $break-large: 1180px;
 	}
 }
 
-@mixin switch-on-gpu {
+@mixin gpu {
     @include transform(translate3d(0,0,0));
 }
 @mixin smooth-triangle {

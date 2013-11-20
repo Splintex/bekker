@@ -50,3 +50,225 @@
     +s(soc-od)
 .soc__gp
     +s(soc-gp)
+.prod-slider
+    margin-bottom: 55px
+.prod-slider__main
+    position: relative
+.prod-title
+    float: left
+    font-size: 0
+.prod-title__item
+    display: inline-block
+    margin-right: 12px
+    vertical-align: middle 
+.prod-title__link
+    display: block
+    padding: 2px 7px 
+    border: 1px solid #e4e4e4 
+    font-size: 13px
+    font-weight: bold
+    color: $black 
+    +border-box
+    &:hover
+        background: #5a5a5b
+        border-color: #5a5a5b
+        color: #fff  
+    &.is-active   
+        padding: 12px 17px 8px
+        background: $yellow
+        text-transform: uppercase
+        border: none
+        line-height: 1
+        +bold 
+        font-weight: normal
+        font-size: 20px 
+        color: $black 
+.prod-slider__item
+    width: 256px
+.prod-slider__prev,
+.prod-slider__next
+    position: absolute
+    top: 50%
+    margin-top: -10px
+.prod-slider__prev
+    +s(arr3)
+    left: -25px
+.prod-slider__next
+    +s(arr4)
+    right: -25px
+.pager
+    float: right
+    margin-top: 14px
+    font-size: 0
+    button
+        display: inline-block
+        vertical-align: middle
+        margin-left: 6px
+        width: 12px
+        height: 12px
+        border: 1px solid rgba(82,82,83,.6)
+        border-radius: 50%
+        background-color: #ebebeb
+    .is-active
+        background: #515153 
+
+.item
+    position: relative
+    margin-right: -1px
+    width: 256px
+    height: 287px
+.item__wrap
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    height: 287px
+    +border-box
+    background: #fff 
+    overflow: hidden
+    border: 1px solid #dbdbdb
+    //+transition(height .2s linear)
+    &:hover
+        height: 393px
+        .item__bottom
+            height: 190px
+        .item__descr
+            //height: 110px
+.item__top
+    padding: 14px 15px 7px 15px
+.item__title
+    height: 35px
+    overflow: hidden
+.item__link
+    font-size: 15px
+    color: $blue
+    font-weight: bold 
+.item__img
+    display: block
+    height: 145px
+    line-height: 145px
+    text-align: center
+    overflow: hidden
+    &:hover 
+        img
+            +scale(1.1)
+    img
+        max-width: 100%
+        max-height: 100%
+        vertical-align: middle
+        +gpu
+        +transition(all .2s linear)
+.item__bottom 
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    padding: 10px 15px 
+    height: 84px
+    background: #fbfbfb
+    +clr   
+    +border-box 
+.item__price  
+    float: left  
+.item__action    
+    float: right
+    li 
+        margin-bottom: 5px 
+    a
+        display: inline-block
+        color: #5a5a5b
+        font-size: 11px
+        border-bottom: 1px dotted  
+.item__descr
+    clear: both
+    padding-top: 11px
+    height: 110px
+    overflow: hidden
+    +border-box
+    font-size: 11px
+    color: $gray 
+    //+transition(height .2s linear)
+.price
+    display: block
+    padding: 2px 
+    +border-box
+    background: $yellow
+    font-size: 0 
+.price__main
+    display: inline-block
+    vertical-align: middle
+    padding: 5px 3px 5px 10px 
+    background: #fff
+    min-width: 100px 
+    +border-box
+    color: $black 
+    strong  
+        font-size: 24px
+    sub
+        font-size: 11px
+.icon-basket  
+    display: inline-block
+    vertical-align: middle  
+    margin: 0 5px 0 9px 
+    +s(basket)
+
+.rate
+    margin-top: 5px
+.rate__stars,
+.rate__counter
+    display: inline-block
+    vertical-align: middle
+.rate__counter
+    font-size: 11px
+    color: #525253 
+.banner
+    margin: 30px 0
+    overflow: hidden
+    text-align: center
+    img
+        max-width: 100%
+        max-height: 100%
+.banner_under-slider
+    margin-top: -15px
+.info-section
+    border-top: 1px solid #e2e2e2 
+    background: $white url(../img/light-bg.png) 0 0 repeat
+.info
+    
+.info__top
+    +clr
+    border-bottom: 3px solid rgba(26,26,27,.45) 
+    padding: 21px 0 12px 
+    .tab
+        display: inline-block
+        vertical-align: middle
+.info__title
+    display: inline-block
+    margin-right: 11px
+    vertical-align: middle
+    font-size: 20px
+    +bold
+    color: $black 
+    font-weight: normal
+
+.info__text
+    padding-top: 32px
+    font-size: 13px
+    
+.tab
+    +clr
+.tab__item
+    float: left
+    padding: 3px 10px
+    &.is-active
+        background: $yellow 
+        .tab__link
+            border-bottom-color: transparent 
+.tab__link
+    display: inline-block
+    color: $black 
+    font-weight: bold
+    font-size: 13px
+    border-bottom: 1px dotted 
+    
+
