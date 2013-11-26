@@ -51,6 +51,12 @@
     +s(soc-gp)
 .prod-slider
     margin-bottom: 55px
+    &.is-special
+        .prod-slider__main
+            box-shadow: 0 0 0 2px $yellow
+        .prod-title__link
+            &.is-active
+                box-shadow: -2px 0 0 $yellow
 .prod-slider__main
     position: relative
 .prod-title
@@ -89,6 +95,10 @@
     position: absolute
     top: 50%
     margin-top: -10px
+    +opacity(.5)
+    +transition(opacity .2s linear)
+    &:hover
+        +opacity(1)
 .prod-slider__prev
     +s(arr3)
     left: -25px
@@ -108,6 +118,8 @@
         border: 1px solid rgba(82,82,83,.6)
         border-radius: 50%
         background-color: #ebebeb
+        &:hover
+            background: #cfd0cf 
     .is-active
         background: #515153 
 
@@ -177,7 +189,9 @@
         display: inline-block
         color: #5a5a5b
         font-size: 11px
-        border-bottom: 1px dotted  
+        border-bottom: 1px dotted 
+        &:hover
+            border-bottom-color: transparent  
 .item__descr
     clear: both
     padding-top: 12px
@@ -193,6 +207,9 @@
     +border-box
     background: $yellow
     font-size: 0 
+    +transition(background .2s linear)
+    &:hover
+        background: #ffcd00 
 .price__main
     display: inline-block
     vertical-align: middle
@@ -235,6 +252,7 @@
     font-size: 11px
     color: #525253 
 .banner
+    display: block
     margin: 30px 0
     overflow: hidden
     text-align: center
@@ -285,6 +303,8 @@
     font-weight: bold
     font-size: 13px
     border-bottom: 1px dotted 
+    &:hover
+        border-bottom-color: transparent 
     
 
 .news
@@ -312,6 +332,8 @@
     color: #525253 
 .news__text
     color: $black 
+    &:hover
+        text-decoration: underline
     
 .link-all
     margin: 10px 0
@@ -320,6 +342,8 @@
         font-size: 13px
         color: $black
         text-decoration: underline
+        &:hover
+            text-decoration: none
         
 .breadcrumbs
     margin: 25px 0 
@@ -352,8 +376,11 @@
     display: inline-block
 
 .credit-buy
-    display: inline-block
+    display: inline-block 
     margin-bottom: 7px
+    &:hover
+        .credit-buy__title
+            background: #323232 
 .credit-buy__title
     display: inline-block
     position: relative
@@ -361,6 +388,7 @@
     padding: 11px 15px 
     color: #fff    
     background: #535353
+    +transition(background .2s linear)
 .credit-buy__price
     display: block
     padding: 8px 15px 7px
@@ -436,6 +464,10 @@
     +clr
     padding: 13px 0 10px 
     border-top: 1px solid #f4f4f4
+    &:hover
+        .prod-small__title  
+        span
+            text-decoration: none
 .prod-small__img
     float: left
     margin-right: 10px

@@ -363,9 +363,10 @@ a
 	padding-top: 7px
 	color: #434344
 	font-size: 11px 
-	span
+	a, span
 		display: inline-block
 		vertical-align: middle
+		color: #434344
 .footer__copy
 	margin-top: 45px
 	.icon-bakker
@@ -408,6 +409,13 @@ a
 .footer__created
 	padding-top: 18px
 	margin-top: 83px
+	a
+		+transition(color .2s linear)
+		&:hover
+			color: $yellow 
+			+ a
+				color: $yellow 
+				
 .icon-sparkle
 	display: inline-block
 	margin-right: 5px

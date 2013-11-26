@@ -1,13 +1,14 @@
 .big-slider
     position: relative
-    height: 361px
-    background: $yellow url(../img/slider-bg.jpg) 0 0 repeat-x
+    //height: 361px
+    //background: $yellow url(../img/slider-bg.jpg) 0 0 repeat-x
     +background-size(100%,100%)
     .cycle-slideshow
         height: 100%
 .big-slider__item
     position: relative
     width: 100%     
+    height: 361px
     +clr
     img
         position: absolute
@@ -19,6 +20,7 @@
         font-size: 18px
     .l-container
         position: relative
+        z-index: 2
 .big-slider__title-wrap
     display: inline-block
     margin-top: 90px
@@ -47,6 +49,9 @@
     position: absolute
     top: 50%
     margin-top: -32px
+    +transition(all .2s linear)
+    &:hover
+        +opacity(.5)
 .big-slider__prev
     left: 0
     +s(arr1)
@@ -57,4 +62,14 @@
 .big-slider__wrap
     padding-left: 65px
     
-
+.big-slider__bg
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    text-align: center
+    img
+        display: block
+        width: 100%
+        height: 100%
