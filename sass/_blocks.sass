@@ -88,10 +88,16 @@
         font-weight: normal
         font-size: 20px 
         color: $black 
+.prod-title_single
+    float: none
+    clear: both
+    border-bottom: 2px solid $yellow 
+
+
 .prod-slider__item
     width: 256px
-.prod-slider__prev,
-.prod-slider__next
+.btn-prev,
+.btn-next
     position: absolute
     top: 50%
     margin-top: -10px
@@ -99,10 +105,10 @@
     +transition(opacity .2s linear)
     &:hover
         +opacity(1)
-.prod-slider__prev
+.btn-prev
     +s(arr3)
     left: -25px
-.prod-slider__next
+.btn-next
     +s(arr4)
     right: -25px
 .pager
@@ -128,6 +134,7 @@
     margin-right: -1px
     width: 256px
     height: 287px
+
 .item__wrap
     position: absolute
     top: 0
@@ -137,7 +144,7 @@
     +border-box
     background: #fff 
     overflow: hidden
-    border: 1px solid #f8f8f8
+    border: 1px solid rgba(219,219,219,.3)
     //+transition(height .2s linear)
     &:hover
         height: 393px
@@ -245,7 +252,8 @@
 .rate
     margin-top: 5px
 .rate__stars,
-.rate__counter
+.rate__counter,
+.rate__title
     display: inline-block
     vertical-align: middle
 .rate__counter
@@ -359,6 +367,8 @@
             top: 0
     a
         text-decoration: underline
+        &:hover
+            text-decoration: none
     i
         position: relative
         top: 1px
@@ -422,6 +432,12 @@
         background: $yellow 
         span
             border-bottom-color: transparent
+        &:hover
+            background: $yellow  
+    &:hover
+        background: #f7f7f7 
+        span
+            border-bottom-color: transparent
     span
         display: inline-block
         vertical-align: middle
@@ -443,6 +459,7 @@
     display: inline-block
     +s(review)
 .tab-cont
+    display: none
     padding-top: 30px
 .article
     p
@@ -501,3 +518,23 @@
     overflow: hidden
     img
         display: block
+        
+.text-item
+    float: left
+    margin-bottom: 64px
+    width: 33%
+    +border-box
+    padding-left: 25px
+    &:first-child
+        padding-left: 0
+.text-item__title
+    margin-bottom: 14px
+    border-bottom: 2px solid $yellow
+    font-weight: normal
+    +bold
+    span
+        display: inline-block
+        padding: 11px 17px 9px
+        font-size: 15px
+        text-transform: uppercase
+        background: $yellow 

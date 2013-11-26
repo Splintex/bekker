@@ -1,6 +1,37 @@
 .prod
     margin-bottom: 39px
-
+.prod-set
+    border-top: 1px solid #e5e5e5 
+    border-left: 1px solid rgba(219,219,219,.3) 
+    border-right: 1px solid rgba(219,219,219,.3) 
+    padding: 15px
+    background: #fbfbfb 
+    strong,span,i
+        display: inline-block
+        vertical-align: middle
+    i
+        margin-right: 3px
+        width: 9px
+        height: 9px
+.prod-set__color
+    display: inline-block
+    margin-left: 8px
+    vertical-align: middle
+    color: $black
+    &:hover
+        span
+            border-bottom-color: transparent 
+    span
+        border-bottom: 1px dotted
+    &.is-red
+        i
+            background: #f00 
+    &.is-yellow
+        i
+            background: #f8eb01
+    &.is-black
+        i
+            background: $black
 .prod__title,
 .prod__articul
     display: inline-block
@@ -20,9 +51,11 @@
 
 .prod__main
     padding: 15px
-    border: 1px solid #e5e5e5 
+    border: 1px solid rgba(219,219,219,.3)
+    border-top: 0
 .prod__left
     float: left
+    width: 400px
 .prod__right
     float: right
     width: 336px
@@ -58,3 +91,120 @@
     &:hover
         border-bottom-color: transparent 
      
+
+.slider
+    position: relative
+    margin: 0 auto 
+    width: 320px
+    .btn-prev,
+    .btn-next
+        top: auto
+        bottom: 13px
+        margin-top: 0
+    .btn-prev
+        left: -2px
+    .btn-next
+        right: 5px
+.slider__top
+    margin-bottom: 20px
+    .slider__item
+        height: 320px
+        width: 100%
+        text-align: center
+        line-height: 320px
+        img
+            vertical-align: middle
+.slider__bottom
+    margin: 0 auto 
+    width: 270px
+    .slider__item
+        margin-right: 8px
+        width: 48px
+        height: 48px
+        +border-box
+        overflow: hidden
+        line-height: 48px
+        text-align: center
+        cursor: pointer
+        border: 1px solid #e5e5e5
+        +transition(border-color .2s linear)
+        &.is-active
+            border-color: $gray
+            &:hover
+                border-color: $gray
+        &:hover
+            border-color: #bababb 
+        img
+            vertical-align: middle
+            width: auto
+            height: auto
+            
+.items-wrap-five-row
+    margin: 0 0 42px
+    .item
+        float: left
+        width: 205px
+        text-align: center
+        &:first-child
+            width: 208px
+    .item__wrap
+        border-top: 0
+    .item__top
+        padding: 14px 10px 7px
+    .item__bottom
+        background: none
+    .item__price
+        float: none
+        display: inline-block
+        
+.table
+    tr
+        &:nth-child(2n+1)
+            td
+                background: #fbfbfb 
+    td
+        padding: 10px
+        &:first-child
+            padding: 10px 0 10px 50px
+    a
+        text-decoration: underline
+        &:hover
+            text-decoration: none
+            
+.review
+    margin-bottom: 18px
+    padding-bottom: 16px
+    border-bottom: 1px solid rgba(219,219,219,.3) 
+    .rate
+        display: inline-block
+        margin: 0
+        vertical-align: middle
+.review__author
+    text-decoration: underline
+    vertical-align: middle
+    font-weight: bold
+    margin-right: 21px
+    &:hover
+        text-decoration: none
+.review__text
+    margin-top: 5px
+
+.write-review
+    display: inline-block
+    border-bottom: 2px dotted
+    &:hover
+        border-bottom-color: transparent 
+        
+.prod__links
+    margin-top: 18px
+    text-align: center
+    a
+        display: inline-block
+        margin-left: 25px
+        border-bottom: 1px dotted
+        color: $gray
+        font-weight: bold   
+        &:first-child
+            margin-left: 0
+        &:hover
+            border-bottom-color: transparent 
