@@ -58,7 +58,6 @@ $break-large: 1180px;
 	color: transparent;
 }
 @mixin clr{
-	&:before,
 	&:after {
 		content: " ";
 		display: table;

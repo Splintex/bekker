@@ -1,0 +1,87 @@
+.cat-top
+	padding: 6px 2px 
+	background: #fbfbfb
+	border-left: 1px solid #f1f1f1  
+	border-right: 1px solid #f1f1f1  
+	+clr
+.cat-sort
+	float: left
+.cart-sort__item
+	display: inline-block
+	vertical-align: middle
+	padding: 4px 13px 
+	border-right: 1px solid #E5E5E5 
+	.drop-list,
+	span
+		display: inline-block
+		vertical-align: middle
+	.drop-list
+		margin-right: 3px
+		
+.icon-blue-arr
+	display: inline-block
+	width: 0px
+	height: 0px
+	border-style: solid
+	border-width: 4px 3px 0 3px
+	border-color: $blue transparent transparent transparent
+
+.catalog-wrap
+	.item
+		margin-bottom: -1px
+.cat-type
+	float: right
+	button
+		width: 28px
+		height: 28px
+		text-align: center
+		+border-box
+		border: 1px solid #e4e4e4
+		background: #fbfbfb 
+		&.is-active
+			background: #eee
+			box-shadow: inset 0 2px 3px rgba(0,0,0,.16)
+	i
+		display: inline-block
+		vertical-align: middle
+.cat-type__grid
+	i
+		+s(sort-grid)
+.cat-type__list
+	i
+		+s(sort-list)
+
+.filter
+	margin-bottom: 27px
+	padding: 15px 15px 15px 18px 
+	background: #fbfbfb
+	border-radius: 3px
+	box-shadow: 0 2px 4px rgba(0,0,0,0.18)
+	.pseudo-link
+		margin: 10px 0 0 28px
+.filter__item
+	margin-bottom: 20px
+.filter__title
+	position: relative
+	padding: 0 15px 9px 0
+	font-size: 15px
+	font-weight: bold
+	+no-select
+	cursor: pointer
+	border-bottom: 1px solid #f4f4f4
+	&:after
+		content: "" 
+		position: absolute
+		right: 3px
+		top: 5px
+		width: 0px
+		height: 0px
+		border-style: solid
+		border-width: 8px 4px 0 4px
+		border-color: #000 transparent transparent transparent
+		+transition(all .1s linear)
+	&.is-active
+		&:after
+			+rotate(180)
+.filter__body
+	padding-top: 12px

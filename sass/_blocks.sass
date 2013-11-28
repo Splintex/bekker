@@ -9,6 +9,9 @@
     +border-box
     font: normal 15px Arial,sans-serif
     color: $black 
+    &:focus
+        +placeholder
+            +hide-text
     +placeholder
         font-weight: bold
         color: $black
@@ -54,19 +57,20 @@
     &.is-special
         .prod-slider__main
             box-shadow: 0 0 0 2px $yellow
-        .prod-title__link
+        .prod-tab__link
             &.is-active
                 box-shadow: -2px 0 0 $yellow
 .prod-slider__main
     position: relative
-.prod-title
+    border-left: 1px solid rgba(219,219,219,0.3)
+.prod-tab
     float: left
     font-size: 0
-.prod-title__item
+.prod-tab__item
     display: inline-block
     margin-right: 12px
     vertical-align: middle 
-.prod-title__link
+.prod-tab__link
     display: block
     padding: 2px 7px 
     border: 1px solid #e4e4e4 
@@ -75,9 +79,12 @@
     color: $black 
     +border-box
     &:hover
+        background: #f7f7f7
+         
+    &:active
         background: #5a5a5b
         border-color: #5a5a5b
-        color: #fff  
+        color: #fff 
     &.is-active   
         padding: 12px 17px 8px
         background: $yellow
@@ -88,7 +95,7 @@
         font-weight: normal
         font-size: 20px 
         color: $black 
-.prod-title_single
+.prod-tab_single
     float: none
     clear: both
     border-bottom: 2px solid $yellow 
@@ -96,6 +103,14 @@
 
 .prod-slider__item
     width: 256px
+    .item
+        &:hover
+            .item__top,
+            .item__bottom
+                box-shadow: none 
+                border-left: 0
+        .item__wrap
+            border-left: 0
 .btn-prev,
 .btn-next
     position: absolute
@@ -134,26 +149,26 @@
     margin-right: -1px
     width: 256px
     height: 287px
-
+    &:hover
+        z-index: 2
+        .item__top
+            box-shadow: 0 0 7px rgba(0,49,82,.25)
+        .item__bottom
+            box-shadow: 3px 2px 7px -2px rgba(0,49,82,0.25), -3px 2px 7px -2px rgba(0,49,82,0.25)
+        .item__descr
+            display: block
 .item__wrap
     position: absolute
     top: 0
     right: 0
     left: 0
-    height: 287px
+    min-height: 287px
     +border-box
     background: #fff 
-    overflow: hidden
-    border: 1px solid rgba(219,219,219,.3)
-    //+transition(height .2s linear)
-    &:hover
-        height: 393px
-        .item__bottom
-            height: 190px
-        .item__descr
-            //height: 110px
+    border: 1px solid rgba(219,219,219,.3)   
 .item__top
     padding: 14px 15px 7px 15px
+    +transition(all .2s linear)
 .item__title
     height: 35px
     overflow: hidden
@@ -178,14 +193,15 @@
         +transition(all .2s linear)
 .item__bottom 
     position: absolute
-    bottom: 0
+    top: 200px
     left: 0
     right: 0
-    padding: 10px 15px 
-    height: 84px
+    padding: 10px 15px 13px
+    //height: 84px
     background: #fbfbfb
     +clr   
     +border-box 
+    +transition(all .2s linear)
 .item__price  
     float: left  
 .item__action    
@@ -200,10 +216,11 @@
         &:hover
             border-bottom-color: transparent  
 .item__descr
+    display: none
     clear: both
-    padding-top: 12px
-    height: 110px
-    overflow: hidden
+    padding-top: 13px
+    //height: 110px
+    //overflow: hidden
     +border-box
     font-size: 11px
     color: $gray 
@@ -261,6 +278,7 @@
     color: #525253 
 .banner
     display: block
+    clear: both
     margin: 30px 0
     overflow: hidden
     text-align: center
@@ -345,7 +363,7 @@
     
 .link-all
     margin: 10px 0
-    padding-left: 50px
+    padding-left: 83px
     a
         font-size: 13px
         color: $black
@@ -538,3 +556,244 @@
         font-size: 15px
         text-transform: uppercase
         background: $yellow 
+        
+.drop-list
+    position: relative
+    display: inline-block
+    padding-right: 14px
+    
+.drop-list__btn
+    position: relative
+    display: block
+    background: #747475
+    font-size: 12px
+    color: #fff 
+    font-weight: bold 
+    border-right: 1px solid #6d6d6d 
+    span
+        display: block
+        padding: 1px 5px
+    &:after,
+    &:before
+        content: ""
+        position: absolute
+    &:before
+        right: -15px
+        top: 0
+        width: 13px
+        height: 17px
+        background: #747475
+        border-right: 1px solid #848484 
+    &:after
+        position: absolute
+        top: 50%
+        right: -9px
+        margin-top: -2px
+        width: 0px
+        height: 0px
+        border-style: solid
+        border-width: 4px 2px 0 2px
+        border-color: #fff transparent transparent transparent
+
+.drop-list__main
+    display: none
+    position: absolute
+    left: 0
+    top: 17px
+    right: 0
+    z-index: 100
+    background: #747475
+    li
+        padding: 3px 5px
+        color: #fff
+        cursor: pointer 
+        &:hover
+            box-shadow: inset 0 0 4px rgba(0,0,0,.4)
+            
+.pseudo-link
+    position: relative
+    display: inline-block
+    border-bottom: 1px dotted
+    cursor: pointer
+    color: $blue
+    font-size: 13px
+    &:hover
+        border-bottom-color: transparent  
+    .icon-blue-arr
+        position: absolute
+        right: -10px
+        top: 7px
+.cart-sort__digit
+    display: inline-block
+    margin-left: 4px
+    padding: 2px 
+    vertical-align: middle
+    font-size: 12px
+    font-weight: bold
+    color: #fff 
+    background: #747475
+.catalog-wrap
+    .item
+        float: left
+        width: 33.3%
+        &:nth-child(2n+3)
+            width: 33.7%
+            
+.pagin
+    position: relative
+    margin-bottom: 30px
+    background: #fbfbfb
+    border: 1px solid #f1f1f1 
+    border-bottom: 0
+    padding: 13px 20px 
+    +clr 
+    font-size: 0
+    text-align: center
+    &:before
+        content: ""
+        position: absolute
+        top: 31px
+        left: 15px
+        right: 15px
+        height: 15px
+        z-index: -1
+        +border-radius(40%)
+        box-shadow: 0 0 10px rgba(0,0,0,.5)
+    a
+        display: inline-block
+        margin-left: 5px
+        width: 22px
+        height: 22px
+        text-align: center
+        line-height: 22px
+        font-size: 15px
+        font-weight: bold
+        vertical-align: middle
+        text-decoration: underline
+        &:hover
+            text-decoration: none
+        &.is-active
+            color: $black
+            text-decoration: none 
+            +g($yellow_light, $yellow)
+        &.is-inactive
+            cursor: default
+            color: #ccc 
+    .pagin__nav
+        width: auto
+        margin-left: 0 
+        font-weight: normal
+.pagin__prev
+    float: left
+.pagin__next
+    float: right
+    
+.checkbox-wrap
+    display: block
+    margin-bottom: 6px
+.checkbox
+    position: relative
+    display: inline-block
+    input
+        position: absolute
+        left: 0
+        top: 0
+        z-index: 2
+        border: 1px solid #f00
+        opacity: 0
+        &:checked
+            + span
+                font-weight: bold
+                +no-select
+                &:after
+                    content: ""
+                    position: absolute
+                    top: 3px
+                    left: 1px
+                    +s(check)
+        &:disabled
+            + span
+                //color: #aeaeae
+                opacity: .4 
+    span
+        position: relative
+        padding-left: 28px
+        left: 0
+        top: 0
+        font-size: 13px
+        &:before
+            content: ""
+            position: absolute 
+            left: 0
+            top: 0
+            width: 12px
+            height: 12px
+            border: 1px solid #adadad
+            +border-radius(2px)
+            background: #fff 
+    sup
+        position: relative
+        top: -5px
+        font-size: 10px
+    
+.item-row
+    border: 1px solid #f4f4f4
+    margin-bottom: -1px
+    +transition(box-shadow .2s linear)
+    +clr
+    &:hover
+        position: relative
+        z-index: 2
+        box-shadow: 0 0 7px rgba(0,49,82,.25)
+.item-row__img
+    float: left
+    width: 200px
+    height: 200px
+    +border-box
+    overflow: hidden
+    text-align: center
+    line-height: 200px
+    margin-right: -1px
+    border-right: 1px solid #f4f4f4
+    &:hover
+        img
+            +scale(1.05)
+    img
+        vertical-align: middle
+        max-width: 90%
+        height: auto
+        +gpu
+        +transition(all .2s linear)
+.item-row__main
+    overflow: hidden
+    +clr
+    border-left: 1px solid #f4f4f4
+    p
+        margin-bottom: 14px
+.item-row__left
+    float: left
+    padding: 15px 15px 15px 20px 
+    width: 373px
+    +border-box
+    color: $gray 
+.item-row__title
+    margin-bottom: 7px
+    font-size: 17px
+.item-row__right
+    overflow: hidden
+    padding: 0 0 10px 18px
+    border-left: 1px solid #f4f4f4 
+    margin-top: 40px
+    .price
+        display: inline-block
+        margin-bottom: 5px
+.item-row__action
+    a
+        margin-right: 7px
+        font-size: 11px
+        display: inline-block
+        color: $gray
+        border-bottom: 1px dotted
+        &:hover
+            border-bottom: 0
+         

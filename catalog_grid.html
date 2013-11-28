@@ -3,13 +3,11 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title>tovar descr</title>
+    <title>Catalog grid</title>
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" media="screen" href="css/screen.css" >
     <script src="js/jquery.js"></script>
     <script src="js/jquery-ui-1.10.3.custom.js"></script>
-    <script src="js/jquery.cycle2.js"></script>
-    <script src="js/jquery.cycle2.carousel.js"></script>
     <script src="js/html5shiv.js"></script>
     <script src="js/common.js"></script>
 </head>
@@ -185,385 +183,369 @@
             </ul>
         </nav>
     </header>
-    <!-- END Header -->
     <div class="l-container">
         <div class="breadcrumbs">
             <a href="#"><i class="icon-home"></i></a><i>\</i>
             <a href="#">AV каталог</a><i>\</i>
-            <a href="#">Сабвуферы</a><i>\</i>
-            <span>Sunfire TS-EQ</span>
+            <span>Сабвуферы</span>
         </div>
     </div>
     <div class="l-container l-container_width wrap">
-        <div class="l-main-col">
-            <div class="prod">
-                <div class="prod__top">
-                    <h2 class="prod-title">Сабвуфер Burmester S8</h2>
-                    <span class="prod__articul"><strong>Артикул:</strong> 23358789</span>
+        <div class="l-col-left">
+            <div class="filter">
+                <div class="filter__item js-accordion">
+                    <div class="filter__title js-accordion-title">Производитель</div>
+                    <div class="filter__body js-accordion-list">
+                        <div class="checkbox-wrap">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span>Twin <sup>(569)</sup></span>
+                            </label>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span>Clearline <sup>(569)</sup></span>
+                            </label>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <label class="checkbox">
+                                <input type="checkbox" disabled>
+                                <span>Skyline Hybrid <sup>(569)</sup></span>
+                            </label>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span>Snowline <sup>(569)</sup></span>
+                            </label>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span>Twin <sup>(569)</sup></span>
+                            </label>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span>Clearline <sup>(569)</sup></span>
+                            </label>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <label class="checkbox">
+                                <input type="checkbox" disabled>
+                                <span>Skyline Hybrid <sup>(569)</sup></span>
+                            </label>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span>Snowline <sup>(569)</sup></span>
+                            </label>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span>Twin <sup>(569)</sup></span>
+                            </label>
+                        </div>
+                        <a class="pseudo-link" href="#">Посмотреть все</a>
+                    </div>
                 </div>
-                <div class="prod-set">
-                    <strong>Другие модификации: </strong>
-                    <a class="prod-set__color is-red" href="#"><i></i><span>Красный</span></a>
-                    <a class="prod-set__color is-yellow" href="#"><i></i><span>Желтый</span></a>
-                    <a class="prod-set__color is-black" href="#"><i></i><span>Черный</span></a>
-                </div>
-                <div class="prod__main wrap">
-                    <div class="prod__left">
-                        <div class="slider js-slider">
-                            <div class="js-slider-cycle slider__top js-cycle-1"
-                                data-cycle-slides="> div"
-                                data-cycle-timeout="0"
-                                data-cycle-fx="fade"
-                                data-cycle-speed="200"
-                                >
-                                <div class="slider__item">
-                                    <img src="img/img1.jpg">
-                                </div>
-                                <div class="slider__item">
-                                    <img src="img/prod2.png">
-                                </div>
-                                <div class="slider__item">
-                                    <img src="img/img1.jpg">
-                                </div>
-                                <div class="slider__item">
-                                    <img src="img/prod2.png">
-                                </div>
-                                <div class="slider__item">
-                                    <img src="img/img1.jpg">
-                                </div>
-                                <div class="slider__item">
-                                    <img src="img/prod2.png">
-                                </div>
-                                <div class="slider__item">
-                                    <img src="img/img1.jpg">
-                                </div>
-                                <div class="slider__item">
-                                    <img src="img/prod2.png">
-                                </div>
+                <div class="filter__item js-accordion">
+                    <div class="filter__title js-accordion-title">Цена</div>
+                    <div class="filter__body js-accordion-list">
+                        <div class="ui-slider js-ui-slider">
+                            <div class="ui-slider__top">
+                                <span>от</span>
+                                <input type="text" class="input js-ui-slider-from">
+                                <span>до</span>
+                                <input type="text" class="input js-ui-slider-to">
                             </div>
-                            <div class="js-slider-cycle slider__bottom js-cycle-2"
-                                data-cycle-slides="> div"
-                                data-cycle-timeout="0"
-                                data-cycle-speed="200"
-                                data-cycle-fx="carousel"
-                                data-cycle-carousel-visible="5"
-                                data-cycle-slide-active-class="is-active"
-                                data-allow-wrap="false"
-                                >
-                                <div class="slider__item">
-                                    <img src="img/img1-s.jpg" width="35" height="35">
-                                </div>
-                                <div class="slider__item">
-                                    <img src="img/prod2-s.jpg" width="35" height="35">
-                                </div>
-                                <div class="slider__item">
-                                    <img src="img/img1-s.jpg" width="35" height="35">
-                                </div>
-                                <div class="slider__item">
-                                    <img src="img/prod2-s.jpg" width="35" height="35">
-                                </div>
-                                <div class="slider__item">
-                                    <img src="img/img1-s.jpg" width="35" height="35">
-                                </div>
-                                <div class="slider__item">
-                                    <img src="img/prod2-s.jpg" width="35" height="35">
-                                </div>
-                                <div class="slider__item">
-                                    <img src="img/img1-s.jpg" width="35" height="35">
-                                </div>
-                                <div class="slider__item">
-                                    <img src="img/prod2-s.jpg" width="35" height="35">
-                                </div>
-                            </div>
-                            <button class="btn-prev js-cycle-prev"></button>
-                            <button class="btn-next js-cycle-next"></button>
-                        </div>
-                        <div class="prod__links">
-                            <a href="#">Видео</a>
-                            <a href="#">3D - Модель</a>
-                        </div>
-                    </div>
-                    <div class="prod__right">
-                        <div class="prod-info">
-                            <p><strong>Наличие: </strong>есть</p>
-                            <a class="price price_big" href="#">
-                                <div class="price__main">
-                                    <strong>24 000<sub>грн</sub></strong>
-                                </div>
-                                <i class="icon-basket"></i>
-                            </a>
-                            <a href="#" class="credit-buy">
-                                <span class="credit-buy__title">Купить в кредит</span>
-                                <span class="credit-buy__price">от <strong>2 560 грн./мес</strong></span>
-                            </a>
-                            <div class="rate">
-                                <div class="rate__stars">
-                                    <img src="img/rate.png" alt="">
-                                </div>
-                            </div> 
-                            <div class="prod-info__delivery">
-                                <i class="icon-delivery"></i>
-                                <strong>Доставка</strong>
-                                <ul>
-                                    <li><strong>Самовывоз:</strong> <a href="#">Карта проезда</a></li>
-                                    <li><strong>По Киеву:</strong> 30 грн.</li>
-                                    <li><strong>Доставка сегодня:</strong> 50 грн.</li>
-                                </ul>
-                            </div>
-                            <a href="#" class="prod-info__link">К сравнению</a>
-                            <a href="#" class="prod-info__link">В избранное</a>
-                        </div>
-                        <div class="soc-like">
-                            <img src="img/soc-like.png" alt="">
+                            <div class="js-ui-slider-main"></div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <ul class="tab js-tab">
-                <li class="tab__item">
-                    <a href="js-tab1" class="tab__link is-active">
-                        <i class="icon-descr"></i><span>Описание</span>
-                    </a>
-                </li>
-                <li class="tab__item">
-                    <a href="js-tab2" class="tab__link">
-                        <i class="icon-char"></i><span>Характеристики</span>
-                    </a>
-                </li>
-                <li class="tab__item">
-                    <a href="js-tab3" class="tab__link">
-                        <i class="icon-review"></i><span>Отзывы</span>
-                    </a>
-                </li>
-            </ul>
-            <div class="tab-cont js-tab1 js-tab-cont">
-                <article class="article">
-                    <p>Силовой кабель — это мощный кабель высочайшего качества, специально разработанный для сетевого электропитания различных электронных устройств. Главной его целью является обеспечение бескомпромиссной передачи электропитания к таким устройствам, как: аудио оборудование High-End класса, видео и профессиональное оборудование различного целевого назначения. В связи с особенностями некоторых конструкций, кабель может обладать свойствами сетевого фильтра. </p>
-                    <p>Этот уникальный фильтр способен подавлять все разновидности высокочастотных сетевых шумов без какого-либо ухудшения качества и ограничения мощности сетевого электропитания. Так же, силовой кабель оснащен надежным экраном, который выполняет две важные функции:
-                    Защищает электрооборудование и другие проводники от распространения на них помех исходящих из электрической сети;</p>
-                    <p>Защищает поток переменного тока от наружного проникновения электромагнитных и радиочастотных помех;
-                    В свою очередь, центральный проводник, обладает очень низким сопротивлением, что создает возможность отлично дренировать оборудование от шумов заземляющих токов.</p>
-                    <p>Американская компания Nordost пока единственный в мире производитель, обладающий оборудованием для экструдирования тефлонового диэлектрика, в результате чего кабели Nordost обладают уникальными свойствами: имеют одновременно низкую емкость и низкую индуктивность, и скорость распространения сигнала до 96% от скорости света. </p>
-                    <p>Даже самые дешевые кабели Nordost имеют физические параметры, намного превышающие параметры кабелей любого другого производителя, значительно снижая фильтрующие свойства кабеля при прохождении сигнала.
-                    Также на сегодняшний день Nordost предлагает широкую линейку высококачественной кабельной продукции, предназначенной для сферы домашнего развлечения. В свою очередь, надежность и точность кабелей Nordost делает их востребованными в медицинской, военной и компьютерной индустрии.</p>
-                    <p>Сегодня компания Nordost производит более 30 различных типов кабелей (акустические, межкомпонентные аналоговые и цифровые, композитные и компонентные видеокабели, кабели для инсталляций, силовой кабель по технологии монофиламент, устройства контроля резонанса Pulsar Points). С аксессуарами Nordost система будет звучать гораздо динамичнее, достигая высокого уровня комфорта даже с проблемными записями.</p>
-                </article>
-            </div>
-            <div class="tab-cont js-tab2 js-tab-cont">
-                <table class="table">
-                    <tbody>
-                        <tr>
-                            <td>Производитель</td>
-                            <td><a href="#">JBL</a> </td>
-                        </tr>
-                        <tr>
-                            <td>Тип </td>
-                            <td>Акустический комплект (сабвуфер, 4 сателлита)</td>
-                        </tr>
-                        <tr>
-                            <td>Встроенный усилитель</td>
-                            <td>есть</td>
-                        </tr>
-                        <tr>
-                            <td>Мощность, Вт</td>
-                            <td>абвуфер: 150 (постоянная)</td>
-                        </tr>
-                        <tr>
-                            <td>Количество полос</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>Входное сопротивление, Ом   сабвуфер</td>
-                            <td>8, громкоговорители: 16</td>
-                        </tr>
-                        <tr>
-                            <td>Частотный диапазон, Гц  </td>
-                            <td>сабвуфер: 32-200, громкоговорители: 140-20000</td>
-                        </tr>
-                        <tr>
-                            <td>Диаметр ВЧ динамика, дюймов</td>
-                            <td>2,5</td>
-                        </tr>
-                        <tr>
-                            <td>Диаметр СЧ динамика, дюймов</td>
-                            <td>нет</td>
-                        </tr>
-                        <tr>
-                            <td>Диаметр НЧ динамика, дюймов</td>
-                            <td>8</td>
-                        </tr>
-                        <tr>
-                            <td>Входы/Выходы    нет данных</td>
-                            <td>нет данных</td>
-                        </tr>
-                        <tr>
-                            <td>Управление (регуляторы) </td>
-                            <td>нет данных</td>
-                        </tr>
-                        <tr>
-                            <td>Габариты, мм    сабвуфер: </td>
-                            <td>356 x 391 x 203, громковорители: 115 x 84 x 96</td>
-                        </tr>
-                        <tr>
-                            <td>Масса, кг   сабвуфер:</td>
-                            <td>0,7</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="tab-cont js-tab3 js-tab-cont">
-                <div class="review">
-                    <a href="#" class="review__author">endymion29</a>
-                    <div class="rate">
-                        <span class="rate__title">Оценка товара:</span>
-                        <div class="rate__stars">
-                            <img src="img/rate.png" alt="">
+                <div class="filter__item js-accordion">
+                    <div class="filter__title js-accordion-title">Характеристики</div>
+                    <div class="filter__body js-accordion-list">
+                        <div class="checkbox-wrap">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span>Бескорпусные <sup>(69)</sup></span>
+                            </label>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span>Корпусные <sup>(54)</sup></span>
+                            </label>
                         </div>
                     </div>
-                    <div class="review__text">
-                        <p>Будьте внимательны при покупке. В некоторых из представленных здесь магазинов товар продают как новый, в оригинальной упаковке и в пленках (а некоторые даже нераспечатанные). Но при проверке по IMEI выясняется, что телефон либо был активирован в 2011 - 2012 годах, либо залочен. <br>Перед покупкой проверьте IMEI. В инете много бесплатных ресурсов, которые помогут это сделать. </p>
-                    </div>
                 </div>
-                <div class="review">
-                    <a href="#" class="review__author">endymion29</a>
-                    <div class="rate">
-                        <span class="rate__title">Оценка товара:</span>
-                        <div class="rate__stars">
-                            <img src="img/rate.png" alt="">
-                        </div>
-                    </div>
-                    <div class="review__text">
-                        <p>Будьте внимательны при покупке. В некоторых из представленных здесь магазинов товар продают как новый, в оригинальной упаковке и в пленках (а некоторые даже нераспечатанные). Но при проверке по IMEI выясняется, что телефон либо был активирован в 2011 - 2012 годах, либо залочен. <br>Перед покупкой проверьте IMEI. В инете много бесплатных ресурсов, которые помогут это сделать. </p>
-                    </div>
-                </div>
-                <div class="review">
-                    <a href="#" class="review__author">endymion29</a>
-                    <div class="rate">
-                        <span class="rate__title">Оценка товара:</span>
-                        <div class="rate__stars">
-                            <img src="img/rate.png" alt="">
-                        </div>
-                    </div>
-                    <div class="review__text">
-                        <p>Будьте внимательны при покупке. В некоторых из представленных здесь магазинов товар продают как новый, в оригинальной упаковке и в пленках (а некоторые даже нераспечатанные). Но при проверке по IMEI выясняется, что телефон либо был активирован в 2011 - 2012 годах, либо залочен. <br>Перед покупкой проверьте IMEI. В инете много бесплатных ресурсов, которые помогут это сделать. </p>
-                    </div>
-                </div>
-                <div class="review">
-                    <a href="#" class="review__author">endymion29</a>
-                    <div class="rate">
-                        <span class="rate__title">Оценка товара:</span>
-                        <div class="rate__stars">
-                            <img src="img/rate.png" alt="">
-                        </div>
-                    </div>
-                    <div class="review__text">
-                        <p>Будьте внимательны при покупке. В некоторых из представленных здесь магазинов товар продают как новый, в оригинальной упаковке и в пленках (а некоторые даже нераспечатанные). Но при проверке по IMEI выясняется, что телефон либо был активирован в 2011 - 2012 годах, либо залочен. <br>Перед покупкой проверьте IMEI. В инете много бесплатных ресурсов, которые помогут это сделать. </p>
-                    </div>
-                </div>
-                <a href="#" class="write-review">Написать отзыв</a>
-            </div>
-        </div>
-        <div class="l-col-right">
-            <div class="block">
-                <h3 class="block__title">Похожие товары</h3>
-                <a class="prod-small" href="#">
-                    <div class="prod-small__img">
-                        <img src="img/prod.jpg" alt="">
-                    </div>
-                    <div class="prod-small__main">
-                        <strong class="prod-small__title"><span>AV ресивер Marantz SR-5007 Black</span></strong>
-                        <span class="prod-small__price">19 000 грн.</span>
-                    </div>
-                </a>
-                <a class="prod-small" href="#">
-                    <div class="prod-small__img">
-                        <img src="img/prod.jpg" alt="">
-                    </div>
-                    <div class="prod-small__main">
-                        <strong class="prod-small__title"><span>AV ресивер Marantz SR-5007 Black</span></strong>
-                        <span class="prod-small__price">19 000 грн.</span>
-                    </div>
-                </a>
-                <a class="prod-small" href="#">
-                    <div class="prod-small__img">
-                        <img src="img/prod.jpg" alt="">
-                    </div>
-                    <div class="prod-small__main">
-                        <strong class="prod-small__title"><span>AV ресивер Marantz SR-5007 Black</span></strong>
-                        <span class="prod-small__price">19 000 грн.</span>
-                    </div>
-                </a>
-                <a class="prod-small" href="#">
-                    <div class="prod-small__img">
-                        <img src="img/prod.jpg" alt="">
-                    </div>
-                    <div class="prod-small__main">
-                        <strong class="prod-small__title"><span>AV ресивер Marantz SR-5007 Black</span></strong>
-                        <span class="prod-small__price">19 000 грн.</span>
-                    </div>
-                </a>
-                <a class="prod-small" href="#">
-                    <div class="prod-small__img">
-                        <img src="img/prod.jpg" alt="">
-                    </div>
-                    <div class="prod-small__main">
-                        <strong class="prod-small__title"><span>AV ресивер Marantz SR-5007 Black</span></strong>
-                        <span class="prod-small__price">19 000 грн.</span>
-                    </div>
-                </a>
-            </div>
-            <div class="block is-best">
-                <h3 class="block__title">Хиты продаж</h3>
-                <a class="prod-small" href="#">
-                    <div class="prod-small__img">
-                        <img src="img/prod.jpg" alt="">
-                    </div>
-                    <div class="prod-small__main">
-                        <strong class="prod-small__title"><span>AV ресивер Marantz SR-5007 Black</span></strong>
-                        <span class="prod-small__price">19 000 грн.</span>
-                    </div>
-                </a>
-                <a class="prod-small" href="#">
-                    <div class="prod-small__img">
-                        <img src="img/prod.jpg" alt="">
-                    </div>
-                    <div class="prod-small__main">
-                        <strong class="prod-small__title"><span>AV ресивер Marantz SR-5007 Black</span></strong>
-                        <span class="prod-small__price">19 000 грн.</span>
-                    </div>
-                </a>
-                <a class="prod-small" href="#">
-                    <div class="prod-small__img">
-                        <img src="img/prod.jpg" alt="">
-                    </div>
-                    <div class="prod-small__main">
-                        <strong class="prod-small__title"><span>AV ресивер Marantz SR-5007 Black</span></strong>
-                        <span class="prod-small__price">19 000 грн.</span>
-                    </div>
-                </a>
-                <a class="prod-small" href="#">
-                    <div class="prod-small__img">
-                        <img src="img/prod.jpg" alt="">
-                    </div>
-                    <div class="prod-small__main">
-                        <strong class="prod-small__title"><span>AV ресивер Marantz SR-5007 Black</span></strong>
-                        <span class="prod-small__price">19 000 грн.</span>
-                    </div>
-                </a>
-                <a class="prod-small" href="#">
-                    <div class="prod-small__img">
-                        <img src="img/prod.jpg" alt="">
-                    </div>
-                    <div class="prod-small__main">
-                        <strong class="prod-small__title"><span>AV ресивер Marantz SR-5007 Black</span></strong>
-                        <span class="prod-small__price">19 000 грн.</span>
-                    </div>
-                </a>
             </div>
             <a class="side-banner" href="#">
                 <img src="img/banner.jpg" alt="">
             </a>
-        </div> 
+        </div>
+        <div class="l-main-col l-main-col_right">
+            <h2 class="prod-title">CАБвуферы</h2>
+            <div class="cat-top">
+                <div class="cat-sort">
+                    <div class="cart-sort__item">
+                        <div class="drop-list js-drop">
+                            <button class="drop-list__btn"><span>12</span></button>
+                            <input type="hidden" class="js-drop-list-input">
+                            <ul class="drop-list__main">
+                                <li data-id="1">12</li>
+                                <li data-id="2">24</li>
+                                <li data-id="3">36</li>
+                            </ul>
+                        </div>
+                        <span>На странице</span>
+                    </div>
+                    <div class="cart-sort__item">
+                        <a href="#" class="pseudo-link">На странице</a>
+                        <span class="cart-sort__digit">13</span>
+                    </div>
+                    <div class="cart-sort__item">
+                        <a href="#" class="pseudo-link">Сначала дорогие <i class="icon-blue-arr"></i></a>
+                    </div>
+                </div>
+                <div class="cat-type">
+                    <button class="cat-type__grid is-active"><i></i></button>
+                    <button class="cat-type__list"><i></i></button>
+                </div>     
+            </div>
+            <div class="catalog-wrap wrap">
+                <div class="item">
+                    <div class="item__wrap">
+                        <div class="item__top">
+                            <h3 class="item__title">
+                                <a href="#" class="item__link">AV ресивер Marantz SR-5007 SilverGold</a>
+                            </h3>
+                            <a class="item__img" href="#">
+                                <img src="img/prod2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item__bottom">
+                            <div class="item__price">
+                                <a class="price" href="#">
+                                    <div class="price__main">
+                                        <strong>760 <sub>грн</sub></strong>
+                                    </div>
+                                    <i class="icon-basket"></i>
+                                </a>  
+                                <div class="rate">
+                                    <div class="rate__stars">
+                                        <img src="img/rate.png" alt="">
+                                    </div>
+                                    <span class="rate__counter">(2)</span>
+                                </div> 
+                            </div>
+                            <ul class="item__action">
+                                <li><a href="#">К сравнению</a></li>
+                                <li><a href="#">В избранное</a></li>
+                            </ul>
+                            <div class="item__descr">
+                                Значительная инновация в том, что новый ряд МС40 рассчитан на всех ценителей музыки, ищущих нового высококачественного воспроизведения звука. С введением новой высококлассной технологии SCS в данном ценовом сегменте, Cabasse приглашает вас открыть для себя новый мир звука, насыщенного точностью воспроизведения, реалистичностью и объемной звуковой сценой 3D. Трехполосная полочная акустика Formentera несет живые звуковые эмоции с элегантностью и непревзойденным качеством.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__wrap">
+                        <div class="item__top">
+                            <h3 class="item__title">
+                                <a href="#" class="item__link">AV ресивер Marantz SR-5007 SilverGold</a>
+                            </h3>
+                            <a class="item__img" href="#">
+                                <img src="img/prod2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item__bottom">
+                            <div class="item__price">
+                                <a class="price" href="#">
+                                    <div class="price__main">
+                                        <strong>760 <sub>грн</sub></strong>
+                                    </div>
+                                    <i class="icon-basket"></i>
+                                </a>  
+                                <div class="rate">
+                                    <div class="rate__stars">
+                                        <img src="img/rate.png" alt="">
+                                    </div>
+                                    <span class="rate__counter">(2)</span>
+                                </div> 
+                            </div>
+                            <ul class="item__action">
+                                <li><a href="#">К сравнению</a></li>
+                                <li><a href="#">В избранное</a></li>
+                            </ul>
+                            <div class="item__descr">
+                                Значительная инновация в том, что новый ряд МС40 рассчитан на всех ценителей музыки, ищущих нового высококачественного воспроизведения звука. С введением новой высококлассной технологии SCS в данном ценовом сегменте, Cabasse приглашает вас открыть для себя новый мир звука, насыщенного точностью воспроизведения, реалистичностью и объемной звуковой сценой 3D. Трехполосная полочная акустика Formentera несет живые звуковые эмоции с элегантностью и непревзойденным качеством.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__wrap">
+                        <div class="item__top">
+                            <h3 class="item__title">
+                                <a href="#" class="item__link">AV ресивер Marantz SR-5007 SilverGold</a>
+                            </h3>
+                            <a class="item__img" href="#">
+                                <img src="img/prod2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item__bottom">
+                            <div class="item__price">
+                                <a class="price" href="#">
+                                    <div class="price__main">
+                                        <strong>760 <sub>грн</sub></strong>
+                                    </div>
+                                    <i class="icon-basket"></i>
+                                </a>  
+                                <div class="rate">
+                                    <div class="rate__stars">
+                                        <img src="img/rate.png" alt="">
+                                    </div>
+                                    <span class="rate__counter">(2)</span>
+                                </div> 
+                            </div>
+                            <ul class="item__action">
+                                <li><a href="#">К сравнению</a></li>
+                                <li><a href="#">В избранное</a></li>
+                            </ul>
+                            <div class="item__descr">
+                                Значительная инновация в том, что новый ряд МС40 рассчитан на всех ценителей музыки, ищущих нового высококачественного воспроизведения звука. С введением новой высококлассной технологии SCS в данном ценовом сегменте, Cabasse приглашает вас открыть для себя новый мир звука, насыщенного точностью воспроизведения, реалистичностью и объемной звуковой сценой 3D. Трехполосная полочная акустика Formentera несет живые звуковые эмоции с элегантностью и непревзойденным качеством.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__wrap">
+                        <div class="item__top">
+                            <h3 class="item__title">
+                                <a href="#" class="item__link">AV ресивер Marantz SR-5007 SilverGold</a>
+                            </h3>
+                            <a class="item__img" href="#">
+                                <img src="img/prod2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item__bottom">
+                            <div class="item__price">
+                                <a class="price" href="#">
+                                    <div class="price__main">
+                                        <strong>760 <sub>грн</sub></strong>
+                                    </div>
+                                    <i class="icon-basket"></i>
+                                </a>  
+                                <div class="rate">
+                                    <div class="rate__stars">
+                                        <img src="img/rate.png" alt="">
+                                    </div>
+                                    <span class="rate__counter">(2)</span>
+                                </div> 
+                            </div>
+                            <ul class="item__action">
+                                <li><a href="#">К сравнению</a></li>
+                                <li><a href="#">В избранное</a></li>
+                            </ul>
+                            <div class="item__descr">
+                                Значительная инновация в том, что новый ряд МС40 рассчитан на всех ценителей музыки, ищущих нового высококачественного воспроизведения звука. С введением новой высококлассной технологии SCS в данном ценовом сегменте, Cabasse приглашает вас открыть для себя новый мир звука, насыщенного точностью воспроизведения, реалистичностью и объемной звуковой сценой 3D. Трехполосная полочная акустика Formentera несет живые звуковые эмоции с элегантностью и непревзойденным качеством.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__wrap">
+                        <div class="item__top">
+                            <h3 class="item__title">
+                                <a href="#" class="item__link">AV ресивер Marantz SR-5007 SilverGold</a>
+                            </h3>
+                            <a class="item__img" href="#">
+                                <img src="img/prod2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item__bottom">
+                            <div class="item__price">
+                                <a class="price" href="#">
+                                    <div class="price__main">
+                                        <strong>760 <sub>грн</sub></strong>
+                                    </div>
+                                    <i class="icon-basket"></i>
+                                </a>  
+                                <div class="rate">
+                                    <div class="rate__stars">
+                                        <img src="img/rate.png" alt="">
+                                    </div>
+                                    <span class="rate__counter">(2)</span>
+                                </div> 
+                            </div>
+                            <ul class="item__action">
+                                <li><a href="#">К сравнению</a></li>
+                                <li><a href="#">В избранное</a></li>
+                            </ul>
+                            <div class="item__descr">
+                                Значительная инновация в том, что новый ряд МС40 рассчитан на всех ценителей музыки, ищущих нового высококачественного воспроизведения звука. С введением новой высококлассной технологии SCS в данном ценовом сегменте, Cabasse приглашает вас открыть для себя новый мир звука, насыщенного точностью воспроизведения, реалистичностью и объемной звуковой сценой 3D. Трехполосная полочная акустика Formentera несет живые звуковые эмоции с элегантностью и непревзойденным качеством.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__wrap">
+                        <div class="item__top">
+                            <h3 class="item__title">
+                                <a href="#" class="item__link">AV ресивер Marantz SR-5007 SilverGold</a>
+                            </h3>
+                            <a class="item__img" href="#">
+                                <img src="img/prod2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item__bottom">
+                            <div class="item__price">
+                                <a class="price" href="#">
+                                    <div class="price__main">
+                                        <strong>760 <sub>грн</sub></strong>
+                                    </div>
+                                    <i class="icon-basket"></i>
+                                </a>  
+                                <div class="rate">
+                                    <div class="rate__stars">
+                                        <img src="img/rate.png" alt="">
+                                    </div>
+                                    <span class="rate__counter">(2)</span>
+                                </div> 
+                            </div>
+                            <ul class="item__action">
+                                <li><a href="#">К сравнению</a></li>
+                                <li><a href="#">В избранное</a></li>
+                            </ul>
+                            <div class="item__descr">
+                                Значительная инновация в том, что новый ряд МС40 рассчитан на всех ценителей музыки, ищущих нового высококачественного воспроизведения звука. С введением новой высококлассной технологии SCS в данном ценовом сегменте, Cabasse приглашает вас открыть для себя новый мир звука, насыщенного точностью воспроизведения, реалистичностью и объемной звуковой сценой 3D. Трехполосная полочная акустика Formentera несет живые звуковые эмоции с элегантностью и непревзойденным качеством.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagin">
+                <a href="#" class="pagin__nav pagin__prev is-inactive">назад</a>
+                <a href="#" class="is-active">1</a>
+                <a href="#">2</a>
+                <a href="#">...</a>
+                <a href="#">14</a>
+                <a href="#">15</a>
+                <a href="#" class="pagin__nav pagin__next">вперед</a>
+            </div>
+        </div>
+        <a class="banner banner_under-slider" href="#"><img src="http://lorempixel.com/1024/97/abstract/" alt=""></a>
         <ul class="prod-tab prod-tab_single">
             <li class="prod-tab__item">
                 <span class="prod-tab__link is-active">Популярные товары в этом разделе</span>
@@ -747,6 +729,7 @@
             </div>
         </div>
     </div>
+    <!-- END Header -->
     <div class="push"></div>
 </div>
 <footer class="footer">
