@@ -5,21 +5,61 @@
     bottom: 0
     right: 0
     left: 0
-    background: #000
-    +opacity(.5) 
+    background: $black
+    +opacity(.8) 
 .popup
-    position: absolute
+    position: fixed
     z-index: 2000
-    width: 940px
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-    padding: 20px 31px 20px 20px
-    margin: auto 
-    width: 940px
-    height: 561px
+    top: 135px
+    left: 50%
+    margin-left: -172px
+    width: 344px
     background: #fff
     +border-box
-    +box-shadow(0 1px 1px #000)
-    
+
+.popup__top
+    position: relative
+    padding: 0 30px 
+    height: 60px
+    line-height: 60px
+    font-size: 20px
+    +bold
+    +border-box
+    background: $yellow 
+    text-transform: uppercase
+    span
+        display: inline-block
+        vertical-align: middle
+        line-height: 1
+.popup__close
+    position: absolute
+    top: 50%
+    right: 30px
+    margin-top: -6px
+    +s(del-black)
+
+.popup__main
+    padding: 30px 
+    .input-wrap
+        margin-bottom: 24px
+    .input
+        padding-left: 52px
+        +placeholder
+            color: #ccc
+            font-weight: normal 
+.input-icon
+    position: absolute
+    left: 0
+    top: 2px
+    bottom: 2px
+    width: 38px
+    line-height: 32px
+    text-align: center
+    border-right: 1px solid #f4f4f4  
+    i
+        display: inline-block
+        vertical-align: middle
+.icon-login
+    +s(login)
+.icon-pass
+    +s(pass)

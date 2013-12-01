@@ -96,8 +96,9 @@ $(document).ready(function() {
             var slider = $(this).find(".js-ui-slider-main");
             var input_from = $(this).find(".js-ui-slider-from");
             var input_to = $(this).find(".js-ui-slider-to");
-            //$(this).find(".ui-slider-handle").html("<span></span>");
-            //var handle = $(this).find(".ui-slider-handle span");
+            $(this).find(".ui-slider-handle").html("<span></span>");
+            var handle_0 = $(this).find(".ui-slider-range").next().find("span");
+            var handle_1 = $(this).find(".ui-slider-range").next().next().find("span");
             slider.slider({
                 range: true,
                 min: 0,
@@ -107,15 +108,46 @@ $(document).ready(function() {
                 slide: function( event, ui ) {
                     input_from.val(ui.values[ 0 ]);
                     input_to.val(ui.values[ 1 ]);
+                    handle_0.text(ui.values[ 0 ]);
+                    handle_1.text(ui.values[ 1 ]);
                 }
             });
-            //$(this).find(".ui-slider-handle").html("<span></span>");
-            //var handle = $(this).find(".ui-slider-handle span");
+            console.log(handle_0);
+            console.log(handle_1);
+            handle_0.text(slider.slider( "values", 0 ));
+            handle_1.text(slider.slider( "values", 1 ));
             input_from.val(slider.slider( "values", 0 ));
             input_to.val(slider.slider( "values", 1 ));
         });
     }
     ui_slider();
+
+     function select() {
+        $(".js-select").each(function(){
+            var select_list = $(this).parent().find(".js-select-list");
+            var text = select_list.find("li").first().text();
+            $(this).find(".js-select-text").text(text);
+            $(this).click(function(){
+                select_list.slideToggle("fast");
+                $(this).toggleClass("is-active");
+            });
+            select_list.find("li").click(function() {
+                var id = $(this).attr("data-id");
+                var text = $(this).text();
+                $(this).parent().parent().find(".js-select-text").text(text);
+                $(this).parent().parent().find(".js-select-input").val(id);
+                $(this).parent().slideUp("fast");
+                $(this).parents(".js-select").removeClass("is-active");
+            });
+        });
+    }
+    select();
+    $('.js-select-list').click(function(event){
+        event.stopPropagation();
+    }); 
+    $('.js-select').click(function(event){
+        event.stopPropagation();
+    });
 
     function accordion() {
         $(".js-accordion-list").hide();
@@ -125,5 +157,10 @@ $(document).ready(function() {
         });
     }
     accordion();
+
+
+    $(".js-del-item-row").bind("click", function(){
+        $(this).closest('.item-row').remove();
+    });
 
 }); 

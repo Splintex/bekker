@@ -1,0 +1,131 @@
+.icon-person
+	+s(person)
+	display: inline-block
+	vertical-align: middle
+.icon-star
+	+s(star-big)
+	display: inline-block
+	vertical-align: middle
+.icon-bascket2
+	+s(bascket2)
+	display: inline-block
+	vertical-align: middle
+	
+.l-main-col
+	.list
+		border: 0
+		
+.list
+	display: table
+	width: 100%
+	border: 1px solid #f4f4f4
+.list_personal
+	width: auto
+	float: left
+	margin: 0 48px 45px 0
+.list_pass
+	.list__row
+		&:first-child
+			.list__item
+				border-top: 1px solid #f4f4f4
+		&:last-child
+			.list__item
+				border-bottom: 0
+.list__row
+	+clr
+	display: table-row
+	font-size: 15px
+.list__title
+	font-weight: bold
+	width: 205px
+.list__item
+	display: table-cell
+	height: 53px 
+	vertical-align: middle
+	border-bottom: 1px solid #f4f4f4
+.item__title
+	width: 205px
+.item__main
+	width: 245px
+	
+.link-edit
+	position: relative
+	margin-left: 18px
+	display: inline-block
+	color: $blue 
+	border-bottom: 1px dotted 
+	i
+		position: absolute
+		left: -18px
+		top: 1px
+		+s(edit)
+.link-edit_personal
+	margin-top: 18px
+.title-l-2
+	margin-bottom: 14px
+	clear: both
+	font-size: 20px
+	font-weight: bold
+	
+.icon-calendar
+	+s(calendar)
+.list__date
+	padding: 0 10px 
+	width: 152px
+	i, span
+		display: inline-block
+		vertical-align: middle
+	.icon-calendar
+		margin-right: 14px
+.list__status
+	width: 195px
+.status
+	display: inline-block
+	padding: 5px 12px 
+	color: #fff 
+	font-size: 13px
+	font-weight: bold
+	i
+		display: inline-block
+		margin-right: 12px
+		vertical-align: middle	
+.status_ok
+	background: #0fa00f 
+	i
+		+s(arr5)
+.status_in-progress
+	background: #7e7e7f 
+.status_cancel
+	background: #e90000 
+	i
+		+s(del-white)
+.list__link
+	width: 407px
+.list__price
+	width: 233px
+	.price
+		display: inline-block
+		.price__main
+			padding-right: 15px
+.list__subrow
+	display: table
+	width: 100%
+	.list__item
+		background: #f7f8f9 
+.list__img
+	width: 125px
+	text-align: center
+.list__prod-img
+	display: inline-block
+	width: 46px
+	height: 46px
+	line-height: 46px
+	text-align: center
+	background: #fff
+	border: 1px solid #e5e5e5
+	img
+		vertical-align: middle
+.list__prod-link
+	padding-right: 10px
+	width: 640px
+	
