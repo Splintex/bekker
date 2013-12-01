@@ -756,7 +756,16 @@
     a
         display: inline-block
         border-bottom: 1px dotted 
-    
+.checkbox_mod
+    input
+        &:checked
+            + span
+                font-weight: normal
+    span
+        padding-left: 22px
+        color: #656565     
+        font-size: 11px
+        font-weight: normal
 .item-row
     position: relative
     border: 1px solid #f4f4f4
@@ -977,3 +986,34 @@
     
 .input-text
     margin-bottom: 9px
+    
+.choose
+    position: relative
+    display: inline-block
+    vertical-align: middle
+    height: 26px
+    +border-box
+    padding: 2px 25px 2px 2px 
+    background: #d0d0d0 
+.choose__input
+    display: block
+    height: 22px
+    width: 26px
+    text-align: center
+    font-size: 18px
+.choose__plus,
+.choose__minus
+    position: absolute
+    right: 9px
+    width: 0px
+    height: 0px
+    border-style: solid
+    background: none
+.choose__plus
+    top: 5px
+    border-width: 0 4px 6px 4px
+    border-color: transparent transparent #fff transparent
+.choose__minus
+    bottom: 5px
+    border-width: 6px 4px 0 4px
+    border-color: #fff transparent transparent transparent

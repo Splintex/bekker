@@ -826,64 +826,66 @@
     </div>
 </footer>
 <!-- END footer -->
-<div class="overlay js-overlay"></div>
-<div class="popup js-popup js-popup-enter">
+<div class="overlay js-overlay" style="display:block"></div>
+<div class="popup popup_basket js-popup js-popup-basket" style="display:block">
     <div class="popup__top">
-        <span>Вход</span>
+        <span>Корзина</span>
         <button class="popup__close js-close-popup"></button>
     </div>
     <div class="popup__main">
-        <div class="input-wrap">
-            <input type="text" class="input" placeholder="Ваш логин">
-            <span class="input-icon"><i class="icon-login"></i></span>
+        <div class="basket">
+            <div class="basket__img">
+                <a href="#">
+                    <img src="img/prod2.png" alt="" width="94">
+                </a>
+            </div>
+            <div class="basket__main">
+                <h2 class="basket__title"><a href="#">Сетевой ресивер Marantz MS 7000 Silver White</a></h2>
+                <div class="basket__price">
+                    <span class="basket__price-one">120 500 <sub>грн</sub></span>
+                    <span class="busket__multiply">X</span>
+                    <div class="choose js-choose" data-max-number="9">
+                        <input type="text" class="choose__input" value="3" readonly="">
+                        <button class="choose__plus js-plus"></button>
+                        <button class="choose__minus js-minus"></button>
+                    </div>
+                    <span class="busket__equal">=</span>
+                    <span class="basket__summa">361 500 <sub>грн</sub></span>
+                </div>
+            </div>
+            <button class="busket__del js-del-busket-item"></button>
         </div>
-        <div class="input-wrap">
-            <input type="password" class="input"placeholder="Ваш пароль">
-            <span class="input-icon"><i class="icon-pass"></i></span>
-            <i class="icon-eye"></i>
+        <div class="basket">
+            <div class="basket__img">
+                <a href="#">
+                    <img src="img/prod2.png" alt="" width="94">
+                </a>
+            </div>
+            <div class="basket__main">
+                <h2 class="basket__title"><a href="#">Сетевой ресивер Marantz MS 7000 Silver White</a></h2>
+                <div class="basket__price">
+                    <span class="basket__price-one">120 500 <sub>грн</sub></span>
+                    <span class="busket__multiply">X</span>
+                    <div class="choose js-choose" data-max-number="9">
+                        <input type="text" class="choose__input" value="3" readonly="">
+                        <button class="choose__plus js-plus"></button>
+                        <button class="choose__minus js-minus"></button>
+                    </div>
+                    <span class="busket__equal">=</span>
+                    <span class="basket__summa">361 500 <sub>грн</sub></span>
+                </div>
+            </div>
+            <button class="busket__del js-del-busket-item"></button>
         </div>
-        <div class="input-wrap input-wrap_forgot-pass">
-            <label class="checkbox checkbox_mod">
-                <input type="checkbox" checked>
-                <span>Запомнить</span>
-            </label>
-            <a href="#" class="pseudo-link">Забыли пароль?</a>
-        </div>
-        <div class="popup__btns">
-            <input type="submit" class="btn" value="Войти">
-            <a href="#">Регистрация</a>
+    </div>
+    <div class="popup__btns">
+        <input type="submit" class="btn" value="Оформить заказ">
+        <a href="#" class="pseudo-link">Очистить корзину</a>
+        <div class="final-price">
+            <span>Всего к оплате:</span>
+            <strong>961 500 <sub>грн</sub></strong>
         </div>
     </div>
 </div>
-<div class="popup js-popup js-popup-reg">
-    <div class="popup__top">
-        <span>Зарегистрироваться</span>
-        <button class="popup__close js-close-popup"></button>
-    </div>
-    <div class="popup__main">
-        <div class="input-wrap">
-            <input type="text" class="input" placeholder="Ваш логин">
-            <span class="input-icon"><i class="icon-login"></i></span>
-        </div>
-        <div class="input-wrap">
-            <input type="text" class="input" placeholder="Ваш номер телефона">
-            <span class="input-icon"><i class="icon-login"></i></span>
-        </div>
-        <div class="input-wrap">
-            <input type="password" class="input"placeholder="Ваш пароль">
-            <span class="input-icon"><i class="icon-pass"></i></span>
-            <i class="icon-eye"></i>
-        </div>
-        <div class="input-wrap">
-            <input type="password" class="input"placeholder="Повторите пароль">
-            <span class="input-icon"><i class="icon-pass"></i></span>
-            <i class="icon-eye icon-eye_close"></i>
-        </div>
-        <div class="popup__btns">
-            <input type="submit" class="btn" value="Регистрация">
-        </div>
-    </div>
-</div>
-
 </body>
 </html>

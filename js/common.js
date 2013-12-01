@@ -163,4 +163,82 @@ $(document).ready(function() {
         $(this).closest('.item-row').remove();
     });
 
+    $(".js-del-busket-item").bind("click", function(){
+        $(this).closest('.basket').remove();
+    });
+
+    $(".js-del-busket-item").bind("click", function(){
+        $(this).closest('.basket').remove();
+    });
+
+    
+
+    var overlay = $(".js-overlay");
+    $(".js-close-popup").click(function (){
+        $(this).parents(".js-popup").hide();
+        overlay.hide();
+    });
+    overlay.click(function(){
+        $(this).hide();
+        $(".js-popup").hide();
+    });
+
+    $(".js-enter-link").click(function (){
+        $(".js-popup-enter").show();
+        overlay.show();
+        return false;
+    });
+    $(".js-reg-link").click(function (){
+        $(".js-popup-reg").show();
+        overlay.show();
+        return false;
+    });
+
+    function choose() {
+        var number = $(".js-choose");
+        number.each(function(){
+            var max_number = +($(this).attr("data-max-number"));
+            var input = $(this).find("input");
+            var plus = $(this).find(".js-plus");
+            var minus = $(this).find(".js-minus");
+            plus.bind("click", function(){
+                var val = +(input.val());
+                if (val >= max_number) {
+                    return false
+                }
+                else {
+                    val += 1;
+                    input.val(val);
+                }
+            });
+            minus.bind("click", function(){
+                var val = +(input.val());
+                if (val > 1) {
+                    val -= 1;
+                    input.val(val);
+                }
+                else {
+                    return false;
+                }
+            });
+        });
+    }
+    choose();
+    
+    function compare() {
+        $(".js-compare th").each(function(i){
+            $(this).addClass("js-cell"+i);
+        });
+        $(".js-compare tr").each(function(){
+            $(this).find("td").each(function(i){
+                $(this).addClass("js-cell"+i);
+            });
+        });
+        $(".js-del-compare").click(function(){
+            var el = $(this).parent().parent().attr("class");
+            $("."+el).remove();
+        });
+    }
+    compare();
+
 }); 

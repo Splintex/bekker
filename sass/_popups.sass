@@ -1,4 +1,5 @@
 .overlay
+    display: none
     position: fixed
     z-index: 1000
     top: 0
@@ -8,6 +9,7 @@
     background: $black
     +opacity(.8) 
 .popup
+    display: none
     position: fixed
     z-index: 2000
     top: 135px
@@ -16,7 +18,21 @@
     width: 344px
     background: #fff
     +border-box
-
+.popup_thank
+    width: 435px
+    margin-left: -217px
+.popup_basket
+    width: 625px
+    margin-left: -312px
+    .popup__main
+        padding: 0 30px 
+    .popup__btns
+        text-align: left
+        padding-bottom: 23px
+    .pseudo-link
+        text-decoration: none
+    .final-price
+        margin-left: 73px
 .popup__top
     position: relative
     padding: 0 30px 
@@ -47,6 +63,12 @@
         +placeholder
             color: #ccc
             font-weight: normal 
+    p
+        margin-bottom: 17px
+        color: $gray
+    .popup__tel
+        font-size: 18px
+        font-weight: bold
 .input-icon
     position: absolute
     left: 0
@@ -63,3 +85,91 @@
     +s(login)
 .icon-pass
     +s(pass)
+.icon-eye
+    position: absolute
+    top: 50%
+    right: 13px
+    margin-top: -5px
+    +s(eye)
+.input-wrap_forgot-pass
+    padding-bottom: 17px
+    .checkbox
+        float: left
+    .pseudo-link
+        float: right
+        
+.popup__btns
+    padding: 21px 40px 0
+    border-top: 1px solid #f5f5f5 
+    text-align: center
+    .btn
+        padding: 11px 22px 
+    a
+        display: inline-block
+        margin-left: 25px
+        text-decoration: underline
+        &:hover
+            text-decoration: none   
+            
+.icon-eye_close
+    +s(eye-close)
+    margin-top: -2px
+    
+.popup__footer
+    padding: 0 30px 
+    height: 60px
+    line-height: 60px
+    background: #fbfbfb 
+    a
+        display: inline-block
+        line-height: 1
+        
+.basket
+    position: relative
+    padding: 30px 0 
+    border-bottom: 1px solid #f4f4f4 
+    +clr
+.basket__img
+    float: left
+    width: 130px
+.basket__main
+    overflow: hidden
+.basket__title
+    margin-bottom: 10px
+    font-size: 17px
+    font-weight: normal
+.basket__price
+    font-size: 24px
+    sub
+        font-size: 11px
+.basket__price-one
+    display: inline-block
+.busket__multiply
+    margin: 0 5px 
+    color: #a7a7a7
+    font-size: 16px 
+.busket__equal
+    margin: 0 15px 
+    color: #a7a7a7
+    font-size: 18px 
+.basket__summa
+    font-weight: bold
+    
+.busket__del
+    position: absolute
+    top: 50%
+    margin-top: -5px
+    right: 0
+    +s(del)
+    cursor: pointer
+    
+.final-price
+    display: inline-block
+    vertical-align: middle
+    span
+        display: block
+        font-size: 13px
+    strong
+        font-size: 30px
+    sub
+        font-size: 11px

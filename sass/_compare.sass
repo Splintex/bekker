@@ -1,0 +1,68 @@
+.compare
+    margin-bottom: 82px
+    text-align: center
+    border-bottom: 1px solid #f4f4f4 
+    tbody
+        tr
+            &:nth-child(2n)
+                td
+                    background: #fbfbfb 
+        tr
+            &:nth-child(2n+1)
+                td
+                    background: #fff
+            td
+                &:first-child
+                    text-align: right
+        td
+            padding: 10px !important 
+    th
+        padding: 20px 0
+        border: 1px solid #f4f4f4  
+        text-align: center
+        vertical-align: middle
+        &:first-child
+            background: #fbfbfb
+            padding: 0 15px 
+ 
+    td
+        border-left: 1px solid #f4f4f4 
+        border-right: 1px solid #f4f4f4 
+.compare__counter
+    text-align: left
+    strong
+        display: inline-block
+        margin-right: 8px
+        font-size: 48px
+        font-weight: bold
+    div
+        display: inline-block
+        font-size: 15px
+        font-weight: normal
+.compare__add
+    display: inline-block
+    padding-top: 12px
+    border-top: 1px solid #f4f4f4 
+.compare__item
+    position: relative
+    padding: 0 35px 
+    .price
+        display: inline-block
+        white-space: nowrap
+        
+.compare__title
+    margin-bottom: 20px
+    line-height: 1.2
+    a
+        text-decoration: none
+.compare__img
+    display: block
+    margin-bottom: 20px
+.compare__del
+    position: absolute
+    right: 17px
+    top: 62px
+    +s(del)
+
+.compare__row-title
+    font-weight: bold
