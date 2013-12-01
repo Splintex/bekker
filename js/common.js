@@ -127,16 +127,24 @@ $(document).ready(function() {
             var select_list = $(this).parent().find(".js-select-list");
             var text = select_list.find("li").first().text();
             $(this).find(".js-select-text").text(text);
+            $(".js-select").removeClass("is-active");
+            $(".js-select-list").hide();
             $(this).click(function(){
-                select_list.slideToggle("fast");
-                $(this).toggleClass("is-active");
+                if ($(this).hasClass("is-active")) {
+                    $(this).removeClass("is-active");
+                    select_list.slideUp("fast");
+                }
+                else {
+                    select_list.slideDown("fast");
+                    $(this).addClass("is-active");
+                }
             });
             select_list.find("li").click(function() {
                 var id = $(this).attr("data-id");
                 var text = $(this).text();
                 $(this).parent().parent().find(".js-select-text").text(text);
                 $(this).parent().parent().find(".js-select-input").val(id);
-                $(this).parent().slideUp("fast");
+                $(this).parent().hide();
                 $(this).parents(".js-select").removeClass("is-active");
             });
         });
