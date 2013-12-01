@@ -241,4 +241,8 @@ $(document).ready(function() {
     }
     compare();
 
+    $('.js-checkbox-group').on('change', 'input[type=checkbox]', function(){
+        $(this).parents(".js-checkbox-group").find('.js-checkbox-extend').toggleClass('is-hidden');
+    });
+
 }); 

@@ -198,7 +198,7 @@
                 <a href="#" class="prod-tab__link">Я постоянный клиент</a>
             </li>
         </ul>
-        <div class="tab-cont js-tab1 js-tab-cont">
+        <div class="tab-cont js-tab1 js-tab-cont tab-cont_no-padding">
             <div class="order">
                 <div class="order__left">
                     <div class="input-row">
@@ -234,10 +234,10 @@
                     </div> 
                     <div class="input-row-title js-checkbox-group">
                         <label class="checkbox">
-                            <input type="checkbox" checked>
+                            <input type="checkbox">
                             <span>Зарегистрироваться</span>
                         </label>
-                        <div class="wrap js-checkbox-extend">
+                        <div class="wrap js-checkbox-extend is-hidden">
                             <div class="input-row__field">
                                 <div class="input-text">Введите пароль:</div>
                                 <input type="text" class="input">
@@ -373,8 +373,61 @@
                     </div> 
                 </div> 
                 <div class="order__right">
-                    <div class="busket">
-                        
+                    <div class="basket-wrap">
+                        <div class="basket-wrap__title">Товары в корзине</div>
+                        <div class="basket basket_small">
+                            <div class="basket__img">
+                                <a href="#">
+                                    <img src="img/prod2.png" alt="" width="42">
+                                </a>
+                            </div>
+                            <div class="basket__main">
+                                <h2 class="basket__title"><a href="#">Сетевой ресивер Marantz MS </a></h2>
+                                <div class="basket__price">
+                                    <span class="basket__price-one">120 500 <sub>грн</sub></span>
+                                    <span class="busket__multiply">X</span>
+                                    <div class="choose js-choose" data-max-number="9">
+                                        <input type="text" class="choose__input" value="3" readonly="">
+                                        <button class="choose__plus js-plus"></button>
+                                        <button class="choose__minus js-minus"></button>
+                                    </div>
+                                    <span class="busket__equal">=</span>
+                                    <span class="basket__summa">361 500 <sub>грн</sub></span>
+                                </div>
+                            </div>
+                            <button class="busket__del js-del-busket-item"></button>
+                        </div>
+                        <div class="basket basket_small">
+                            <div class="basket__img">
+                                <a href="#">
+                                    <img src="img/prod2.png" alt="" width="42">
+                                </a>
+                            </div>
+                            <div class="basket__main">
+                                <h2 class="basket__title"><a href="#">Сетевой ресивер Marantz MS </a></h2>
+                                <div class="basket__price">
+                                    <span class="basket__price-one">120 500 <sub>грн</sub></span>
+                                    <span class="busket__multiply">X</span>
+                                    <div class="choose js-choose" data-max-number="9">
+                                        <input type="text" class="choose__input" value="3" readonly="">
+                                        <button class="choose__plus js-plus"></button>
+                                        <button class="choose__minus js-minus"></button>
+                                    </div>
+                                    <span class="busket__equal">=</span>
+                                    <span class="basket__summa">361 500 <sub>грн</sub></span>
+                                </div>
+                            </div>
+                            <button class="busket__del js-del-busket-item"></button>
+                        </div>
+                        <div class="delivery-info">
+                            <a href="#" class="pseudo-link">Доставка:</a> по Украине
+                            <strong>150 грн</strong>
+                        </div>
+                        <ul class="basket-final">
+                            <li><strong>Скидка:</strong> 0 грн
+                            <li class="basket-final__summa"><strong>Итого:</strong> 1 699 грн
+                            <li><strong>Оплата:</strong> Наличными
+                        </ul>
                     </div>
                 </div> 
             </div>
