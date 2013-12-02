@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title>Order</title>
+    <title>Contacts</title>
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" media="screen" href="css/screen.css" >
     <script src="js/jquery.js"></script>
@@ -187,249 +187,66 @@
     <div class="l-container l-container_width">
         <div class="breadcrumbs">
             <a href="#"><i class="icon-home"></i></a><i>\</i>
-            <a href="#">AV каталог</a><i>\</i>
-            <span>Сабвуферы</span>
+            <span>Контакты</span>
         </div>
-        <ul class="prod-tab prod-tab_border prod-tab_simple">
+        <ul class="prod-tab prod-tab_border">
             <li class="prod-tab__item">
-                <a href="#" class="prod-tab__link is-active">Оформление заказа</a>
-            </li>
-            <li class="prod-tab__item">
-                <a href="#" class="prod-tab__link">Я постоянный клиент</a>
+                <a href="#" class="prod-tab__link is-active">Контакты</a>
             </li>
         </ul>
-        <div class="tab-cont js-tab1 js-tab-cont tab-cont_no-padding">
-            <div class="order">
-                <div class="order__left">
-                    <div class="input-row">
-                        <div class="input-row__info">
-                            <strong>Имя, Фамилия получателя:</strong>
-                            <span>Для документов</span>
-                        </div>
-                        <div class="input-row__field">
-                            <input type="text" class="input">
-                        </div>
-                    </div> 
-                    <div class="input-row">
-                        <div class="input-row__info">
-                            <strong>Телефон:</strong>
-                            <span>Для уточнения заказа</span>
-                        </div>
-                        <div class="input-row__field">
-                            <input type="text" class="input">
-                        </div>
-                    </div> 
-                    <div class="input-row">
-                        <div class="input-row__info">
-                            <strong>E-mail:</strong>
-                            <span>Для уведомления о заказе</span>
-                        </div>
-                        <div class="input-row__field">
-                            <input type="text" class="input">
-                            <label class="checkbox">
-                                <input type="checkbox" checked>
-                                <span>Подписатся на рассылку</span>
-                            </label>
-                        </div>
-                    </div> 
-                    <div class="input-row-title js-checkbox-group">
-                        <label class="checkbox">
-                            <input type="checkbox">
-                            <span>Зарегистрироваться</span>
-                        </label>
-                        <div class="wrap js-checkbox-extend is-hidden">
-                            <div class="input-row__field">
-                                <div class="input-text">Введите пароль:</div>
-                                <input type="text" class="input">
-                            </div>
-                            <div class="input-row__field">
-                                <div class="input-text">Повторите пароль:</div>
-                                <input type="text" class="input">
-                            </div>
-                        </div>
+        <div class="cont">
+            <div class="l-main-col">
+                <div class="cont__wrap">
+                    <div class="cont__col">
+                        <h3 class="cont__title">Телефоны:</h3>
+                        <p>(044) 230-81-02</p>
+                        <p>(063) 347-64-75</p>
+                        <p>(095) 738-19-18</p>
+                        <p>(098) 984-17-12</p>
                     </div>
-                    <div class="input-row">
-                        <div class="input-row__info">
-                            <strong>Способ доставки:</strong>
-                            <span>Выберите способ доставки</span>
-                        </div>
-                        <div class="input-row__field">
-                            <div class="select js-select">
-                                <span class="select__text js-select-text"></span>
-                                <input type="hidden" class="js-select-input" value="">
-                                <ul class="select__list js-select-list">
-                                    <li data-id="0">Доставка по Украине</li>
-                                    <li data-id="1">var2</li>
-                                    <li data-id="2">var3</li>
-                                    <li data-id="3">var4</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="input-row">
-                        <div class="input-row__info">
-                            <strong>Форма оплаты:</strong>
-                            <span>Выберите одну из карт</span>
-                        </div>
-                        <div class="input-row__field">
-                            <div class="select js-select">
-                                <span class="select__text js-select-text"></span>
-                                <input type="hidden" class="js-select-input" value="">
-                                <ul class="select__list js-select-list">
-                                    <li data-id="0">Наличными Куръеру</li>
-                                    <li data-id="1">var2</li>
-                                    <li data-id="2">var3</li>
-                                    <li data-id="3">var4</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="input-row">
-                        <div class="input-row__info">
-                            <strong>Вы плательшик и получатель?</strong>
-                        </div>
-                        <div class="input-row__field">
-                            <label class="checkbox">
-                                <input type="checkbox" checked>
-                                <span>Да</span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                <span>Нет</span>
-                            </label>
-                        </div>
+                    <div class="cont__col">
+                        <h3 class="cont__title">График работы Call-центра:</h3>
+                        <p>Пн-Пт: с 8:00 до 21:00</p>
+                        <p>Суббота: с 9:00 до 20:00</p>
+                        <p>Воскресенье: с 10:00 до 19:00</p>
                     </div>
-                    <div class="input-row">
-                        <div class="input-row__info">
-                            <strong>Область:</strong>
-                            <span>Выберите область из списка</span>
-                        </div>
-                        <div class="input-row__field">
-                            <div class="select js-select">
-                                <span class="select__text js-select-text"></span>
-                                <input type="hidden" class="js-select-input" value="">
-                                <ul class="select__list js-select-list">
-                                    <li data-id="0">Киевская</li>
-                                    <li data-id="1">var2</li>
-                                    <li data-id="2">var3</li>
-                                    <li data-id="3">var4</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="input-row">
-                        <div class="input-row__info">
-                            <strong>Город:</strong>
-                            <span>Укажите город</span>
-                        </div>
-                        <div class="input-row__field">
-                            <div class="select js-select">
-                                <span class="select__text js-select-text"></span>
-                                <input type="hidden" class="js-select-input" value="">
-                                <ul class="select__list js-select-list">
-                                    <li data-id="0">var1</li>
-                                    <li data-id="1">var2</li>
-                                    <li data-id="2">var3</li>
-                                    <li data-id="3">var4</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="input-row">
-                        <div class="input-row__info">
-                            <strong>Адрес:</strong>
-                            <span>Укажите точный адрес</span>
-                        </div>
-                        <div class="input-row__field">
-                            <div class="select js-select">
-                                <span class="select__text js-select-text"></span>
-                                <input type="hidden" class="js-select-input" value="">
-                                <ul class="select__list js-select-list">
-                                    <li data-id="0">var1</li>
-                                    <li data-id="1">var2</li>
-                                    <li data-id="2">var3</li>
-                                    <li data-id="3">var4</li>
-                                </ul>
-                            </div>
-                        </div>
+                </div>
+                <div class="map-wrap">
+                    <p>Уважаемые клиенты, пожалуйста, обратите внимание, наш выставочный зал в  находится по адресу: <br> <strong>г. Киев. ул. Ярославская, 57</strong></p>
+                    <iframe class="map" width="710" height="230" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?hl=uk&amp;ie=UTF8&amp;ll=53.527248,-4.064941&amp;spn=11.719671,33.815918&amp;t=m&amp;z=6&amp;output=embed"></iframe>
+                </div>
+                <div class="feedback">
+                    <div class="feedback__top">
+                        <h3 class="cont__title">Обратная связь:</h3>
+                        <p>Если у Вас есть какие-то вопросы, комментарии, предложения или жалобы, пожалуйста, заполните форму.Письмо будет отправлено в службу поддержки. Мы приложим все усилия для того, чтобы ответить Вам максимально быстро.</p>
                     </div>
-                    <div class="input-row">
-                        <div class="input-row__info">
-                            <strong>Комментарии по доставке:</strong>
-                            <span>Дополнительная информация по доставке</span>
-                        </div>
-                        <div class="textarea-wrap">    
-                            <textarea class="input input_textarea"></textarea>
-                        </div>
-                    </div>
-                    <div class="input-row">
-                        <label class="checkbox">
-                            <input type="checkbox" checked>
-                            <span>Я соглашаюсь с <a href="#">Пользовательским соглашением</a></span>
-                        </label>
-                    </div> 
-                    <div class="input-row">
-                        <input type="submit" class="btn" value="Оформить заказ">
-                    </div> 
-                </div> 
-                <div class="order__right">
-                    <div class="basket-wrap">
-                        <div class="basket-wrap__title">Товары в корзине</div>
-                        <div class="basket basket_small">
-                            <div class="basket__img">
-                                <a href="#">
-                                    <img src="img/prod2.png" alt="" width="42">
-                                </a>
-                            </div>
-                            <div class="basket__main">
-                                <h2 class="basket__title"><a href="#">Сетевой ресивер Marantz MS </a></h2>
-                                <div class="basket__price">
-                                    <span class="basket__price-one">120 500 <sub>грн</sub></span>
-                                    <span class="busket__multiply">X</span>
-                                    <div class="choose js-choose" data-max-number="9">
-                                        <input type="text" class="choose__input" value="3" readonly="">
-                                        <button class="choose__plus js-plus"></button>
-                                        <button class="choose__minus js-minus"></button>
-                                    </div>
-                                    <span class="busket__equal">=</span>
-                                    <span class="basket__summa">361 500 <sub>грн</sub></span>
+                    <div class="feedback__form">
+                        <form>
+                            <div class="feedback__left">
+                                <div class="input-wrap">
+                                    <strong class="input-wrap__title">Представьтесь:</strong>
+                                    <input type="text" class="input">
+                                </div>
+                                <div class="input-wrap">
+                                    <strong class="input-wrap__title">Aдрес вашей эл. почты:</strong>
+                                    <input type="text" class="input">
                                 </div>
                             </div>
-                            <button class="busket__del js-del-busket-item"></button>
-                        </div>
-                        <div class="basket basket_small">
-                            <div class="basket__img">
-                                <a href="#">
-                                    <img src="img/prod2.png" alt="" width="42">
-                                </a>
-                            </div>
-                            <div class="basket__main">
-                                <h2 class="basket__title"><a href="#">Сетевой ресивер Marantz MS </a></h2>
-                                <div class="basket__price">
-                                    <span class="basket__price-one">120 500 <sub>грн</sub></span>
-                                    <span class="busket__multiply">X</span>
-                                    <div class="choose js-choose" data-max-number="9">
-                                        <input type="text" class="choose__input" value="3" readonly="">
-                                        <button class="choose__plus js-plus"></button>
-                                        <button class="choose__minus js-minus"></button>
-                                    </div>
-                                    <span class="busket__equal">=</span>
-                                    <span class="basket__summa">361 500 <sub>грн</sub></span>
+                            <div class="feedback__right">
+                                <div class="input-wrap">
+                                    <strong class="input-wrap__title">Сообщение:</strong>
+                                    <textarea class="input input_textarea"></textarea>
+                                    <input type="submit" class="btn" value="Отправить">
                                 </div>
                             </div>
-                            <button class="busket__del js-del-busket-item"></button>
-                        </div>
-                        <div class="delivery-info">
-                            <a href="#" class="pseudo-link">Доставка:</a> по Украине
-                            <strong>150 грн</strong>
-                        </div>
-                        <ul class="basket-final">
-                            <li><strong>Скидка:</strong> 0 грн
-                            <li class="basket-final__summa"><strong>Итого:</strong> 1 699 грн
-                            <li><strong>Оплата:</strong> Наличными
-                        </ul>
+                        </form>
                     </div>
-                </div> 
+                </div>
+            </div>
+            <div class="l-col-right">
+                <a class="side-banner" href="#">
+                    <img src="img/banner.jpg" alt="">
+                </a>
             </div>
         </div>
     </div>

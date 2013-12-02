@@ -37,15 +37,17 @@
     display: inline-block
     vertical-align: middle
 .prod-title
+    max-width: 660px
     padding: 12px 17px 8px
     background: $yellow
     text-transform: uppercase
-    line-height: 1
+    line-height: 1.1
     +bold 
     font-weight: normal
     font-size: 20px 
     color: $black 
     margin-right: 10px
+    +border-box
 .prod__articul
     font-size: 12px
 
@@ -153,10 +155,12 @@
         padding: 14px 10px 7px
     .item__bottom
         background: #fff
-        text-align: left
+        //text-align: left
     .item__price
         float: none
         display: inline-block
+    .item__descr
+        text-align: left
         
 .table
     tr
