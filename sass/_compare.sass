@@ -1,7 +1,21 @@
-.compare
-    margin-bottom: 82px
+.compare-wrap
     text-align: center
     border-bottom: 1px solid #f4f4f4 
+    &.is-fixed-compare
+        .compare__left,
+        .compare__right
+            padding-top: 202px
+        .compare__left
+            th
+                min-width: 178px
+    .is-fixed
+        position: fixed
+        top: 0  
+        overflow: auto
+    +clr
+    .table
+        td,th
+            padding: 10px !important 
     tbody
         tr
             &:nth-child(2n)
@@ -11,23 +25,37 @@
             &:nth-child(2n+1)
                 td
                     background: #fff
-            td
-                &:first-child
-                    text-align: right
-        td
-            padding: 10px !important 
     th
         padding: 20px 0
         border: 1px solid #f4f4f4  
         text-align: center
         vertical-align: middle
-        &:first-child
-            background: #fbfbfb
-            padding: 0 15px 
  
     td
-        border-left: 1px solid #f4f4f4 
         border-right: 1px solid #f4f4f4 
+.compare__left
+    float: left
+    width: 200px
+    .table
+        th
+            min-width: 148px
+            height: 181px
+            background: #fbfbfb
+            padding: 0 15px 
+            border-right: 0
+        td
+            border-left: 1px solid #f4f4f4 
+            border-right: 1px solid #f4f4f4
+            min-width: 148px
+.compare__right
+    float: right
+    width: 824px
+    overflow-x: auto 
+    th
+        min-width: 175px
+        background: #fff 
+    td
+        min-width: 175px
 .compare__counter
     text-align: left
     strong
@@ -45,7 +73,7 @@
     border-top: 1px solid #f4f4f4 
 .compare__item
     position: relative
-    padding: 0 35px 
+    padding: 0 10px 
     .price
         display: inline-block
         white-space: nowrap

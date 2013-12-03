@@ -18,11 +18,6 @@ $(document).ready(function() {
             next: cycle_next,
             pager: pager,
         });
-        // cycle_prev.click(function(){
-        //     var index = slider_2.data('cycle.API').getSlideIndex(this);
-        //     slideshows.cycle('goto', index);
-        // });
-
     });
 
     $(".js-search-example").click(function (){
@@ -30,7 +25,6 @@ $(document).ready(function() {
         $(this).parents(".header__search").find(".input").val(text);
     })
     
-
     function init_cycle() {
         if ($(".js-slider").length > 0) {
 
@@ -255,4 +249,50 @@ $(document).ready(function() {
         $(this).parents(".js-checkbox-group").find('.js-checkbox-extend').toggleClass('is-hidden');
     });
 
+    function fix_table() {
+        var top = $(".compare").offset().top;
+        var left1 = $(".js-head-wrap-1").offset().left;
+        var left2 = $(".js-head-wrap-2").offset().left;
+        var head1 = $(".js-head-1");
+        var head2 = $(".js-head-2");
+        console.log(top);
+        console.log(left1);
+        console.log(left2);
+        if ($(window).scrollTop() >= top) {
+            head1.addClass("is-fixed");
+            head2.addClass("is-fixed");
+            $(".compare").addClass("is-fixed-compare");
+            head1.css({
+                left: left1
+            });
+            head2.css({
+                left: left2,
+                width: $(".js-head-wrap-2").width()
+            });
+        }
+        else {
+            head1.removeClass("is-fixed");
+            head2.removeClass("is-fixed");
+            $(".compare").removeClass("is-fixed-compare");
+        }
+    }
+    
+    if ($(".js-compare").length > 0) {
+        fix_table();    
+    }
+    
+    $(window).scroll(function(){
+        if ($(".js-compare").length > 0) {
+            fix_table();    
+        }
+    });
+
+    $(".js-head-2").scroll(function(){
+        var scroll_left = $(this).scrollLeft();
+        $(".compare__right").scrollLeft(scroll_left);
+    });
+    $(".compare__right").scroll(function(){
+        var scroll_left = $(this).scrollLeft();
+        $(".js-head-2").scrollLeft(scroll_left);
+    });
 }); 
