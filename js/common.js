@@ -55,18 +55,23 @@ $(document).ready(function() {
 
 
     function tab() {
-        var tab_link = $(".js-tab a");
-        var tab_cont = $(".js-tab-cont");
-        $(".js-tab1").show();
-        tab_link.bind("click", function() {
-            var index = $(this).attr("href");
+        $(".js-tab").each(function(){
 
-            tab_link.removeClass("is-active");
-            $(this).addClass("is-active");
-
+            var tab_link = $(this).find("a");
+            var tab_cont = $(this).parents(".js-tab-group").find(".js-tab-cont");
             tab_cont.hide();
-            $("."+index).slideDown("fast");
-            return false;
+            $(this).parents(".js-tab-group").find(".js-tab1").show();
+
+            tab_link.bind("click", function() {
+                var index = $(this).attr("href");
+                tab_link.removeClass("is-active");
+                tab_link.parent().removeClass("is-active");
+                $(this).addClass("is-active");
+                $(this).parent().addClass("is-active");
+                tab_cont.hide();
+                $(this).parents(".js-tab-group").find("."+index).slideDown("fast");
+                return false;
+            });
         });
     }
     tab();
@@ -299,4 +304,14 @@ $(document).ready(function() {
         var scroll_left = $(this).scrollLeft();
         $(".js-head-2").scrollLeft(scroll_left);
     });
+
+
+    $(".js-list-extend").hide();
+    $(".js-list-extend-link").click(function(){
+        $(this).parents(".list__row").find(".js-list-extend").slideToggle("fast");
+        $(this).toggleClass("is-active");
+        return false;
+    });
+
+
 }); 

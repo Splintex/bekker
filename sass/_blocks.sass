@@ -68,7 +68,7 @@
         .prod-slider__main
             box-shadow: 0 0 0 2px $yellow
         .prod-tab__link
-            &.is-active
+            &.is-title
                 box-shadow: -2px 0 0 $yellow
 .prod-slider__main
     position: relative
@@ -88,6 +88,16 @@
         &:hover
             border-bottom-color: transparent
             background: none 
+        &.is-active
+            padding: 12px 17px 8px
+            background: $yellow
+            text-transform: uppercase
+            border: none
+            line-height: 1
+            +bold 
+            font-weight: normal
+            font-size: 20px 
+            color: $black 
 .prod-tab__item
     display: inline-block
     margin-right: 12px
@@ -103,11 +113,11 @@
     &:hover
         background: #f7f7f7
          
-    &:active
+    &.is-active
         background: #5a5a5b
         border-color: #5a5a5b
         color: #fff 
-    &.is-active   
+    &.is-title   
         padding: 12px 17px 8px
         background: $yellow
         text-transform: uppercase
@@ -122,10 +132,14 @@
     clear: both
     border-bottom: 2px solid $yellow 
 
-
+.prod-slider__group
+    margin-right: -1px
+    +clr      
 .prod-slider__item
+    float: left
     width: 256px
     .item
+        width: 255px
         &:hover
             .item__top,
             .item__bottom
@@ -133,6 +147,9 @@
                 border-left: 0
         .item__wrap
             border-left: 0
+.prod-slider__cycle
+    width: 100% !important
+    height: 287px
 .btn-prev,
 .btn-next
     position: absolute
@@ -316,7 +333,6 @@
 .info
     width: 422px
 .info__top
-    margin-bottom: 19px
     +clr
     border-bottom: 3px solid rgba(26,26,27,.45) 
     padding: 21px 0 12px 
@@ -333,14 +349,14 @@
     font-weight: normal
 
 .info__text
-    margin-top: 32px
+    padding-top: 32px
     font-size: 13px
     
 .simple-tab
     +clr
 .simple-tab__item
     float: left
-    padding: 3px 10px
+    padding: 3px 10px  
     &.is-active
         background: $yellow 
         .simple-tab__link
@@ -356,8 +372,7 @@
     
 
 .news
-    margin-top: 17px
-    padding: 0 5px 17px 0
+    padding: 17px 5px 17px 0
     +clr
     border-bottom: 1px solid rgba(150,150,161,.5)
 .news__img
