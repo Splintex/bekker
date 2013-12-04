@@ -2,9 +2,9 @@
     text-align: center
     border-bottom: 1px solid #f4f4f4 
     &.is-fixed-compare
-        .compare__left,
-        .compare__right
-            padding-top: 202px
+        //.compare__left,
+        //.compare__right
+        padding-top: 202px
         .compare__left
             th
                 min-width: 178px
@@ -14,6 +14,7 @@
         overflow: auto
     +clr
     .table
+        overflow: hidden
         td,th
             padding: 10px !important 
     tbody
@@ -36,6 +37,8 @@
 .compare__left
     float: left
     width: 200px
+    border-right: 1px solid #f4f4f4 
+    +border-box
     .table
         th
             min-width: 148px
@@ -54,6 +57,8 @@
     th
         min-width: 175px
         background: #fff 
+        &:first-child
+            border-left: 0
     td
         min-width: 175px
 .compare__counter

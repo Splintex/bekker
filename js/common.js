@@ -241,6 +241,11 @@ $(document).ready(function() {
         $(".js-del-compare").click(function(){
             var el = $(this).parent().parent().attr("class");
             $("."+el).remove();
+            $(".js-head-wrap-2").find("td").each(function(){
+                var width = $(this).width();
+                var element = $(this).attr("class");
+                $(".js-head-2").find("."+element).width(width);
+            });
         });
     }
     compare();
@@ -250,18 +255,17 @@ $(document).ready(function() {
     });
 
     function fix_table() {
-        var top = $(".compare").offset().top;
+        var top = $(".compare-wrap").offset().top;
         var left1 = $(".js-head-wrap-1").offset().left;
         var left2 = $(".js-head-wrap-2").offset().left;
         var head1 = $(".js-head-1");
         var head2 = $(".js-head-2");
         console.log(top);
-        console.log(left1);
-        console.log(left2);
+        console.log($(window).scrollTop());
         if ($(window).scrollTop() >= top) {
             head1.addClass("is-fixed");
             head2.addClass("is-fixed");
-            $(".compare").addClass("is-fixed-compare");
+            $(".compare-wrap").addClass("is-fixed-compare");
             head1.css({
                 left: left1
             });
@@ -273,7 +277,7 @@ $(document).ready(function() {
         else {
             head1.removeClass("is-fixed");
             head2.removeClass("is-fixed");
-            $(".compare").removeClass("is-fixed-compare");
+            $(".compare-wrap").removeClass("is-fixed-compare");
         }
     }
     
@@ -286,7 +290,7 @@ $(document).ready(function() {
             fix_table();    
         }
     });
-
+    
     $(".js-head-2").scroll(function(){
         var scroll_left = $(this).scrollLeft();
         $(".compare__right").scrollLeft(scroll_left);
