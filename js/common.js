@@ -97,9 +97,6 @@ $(document).ready(function() {
             var slider = $(this).find(".js-ui-slider-main");
             var input_from = $(this).find(".js-ui-slider-from");
             var input_to = $(this).find(".js-ui-slider-to");
-            $(this).find(".ui-slider-handle").html("<span></span>");
-            var handle_0 = $(this).find(".ui-slider-range").next().find("span");
-            var handle_1 = $(this).find(".ui-slider-range").next().next().find("span");
             slider.slider({
                 range: true,
                 min: 0,
@@ -107,14 +104,20 @@ $(document).ready(function() {
                 step: 200,
                 values: [ 7600, 50000 ],
                 slide: function( event, ui ) {
-                    input_from.val(ui.values[ 0 ]);
-                    input_to.val(ui.values[ 1 ]);
-                    handle_0.text(ui.values[ 0 ]);
-                    handle_1.text(ui.values[ 1 ]);
+                    $(this).find(".ui-slider-handle").html("<span></span>");
+                    var handle_0 = $(this).find(".ui-slider-range").next().find("span")
+                    var handle_1 = $(this).find(".ui-slider-range").next().next().find("span");
+                    input_from.val(ui.values[0]);
+                    input_to.val(ui.values[1]);
+                    handle_0.text(ui.values[0]);
+                    handle_1.text(ui.values[1]);
                 }
             });
             console.log(handle_0);
             console.log(handle_1);
+            $(this).find(".ui-slider-handle").html("<span></span>");
+            var handle_0 = $(this).find(".ui-slider-range").next().find("span")
+            var handle_1 = $(this).find(".ui-slider-range").next().next().find("span");
             handle_0.text(slider.slider( "values", 0 ));
             handle_1.text(slider.slider( "values", 1 ));
             input_from.val(slider.slider( "values", 0 ));
@@ -199,6 +202,11 @@ $(document).ready(function() {
     });
     $(".js-reg-link").click(function (){
         $(".js-popup-reg").show();
+        overlay.show();
+        return false;
+    });
+    $(".js-popup-basket-link").click(function (){
+        $(".js-popup-basket").show();
         overlay.show();
         return false;
     });

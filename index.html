@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <div class="header__busket">
-                    <a class="header__busket-icon" href="#">
+                    <a class="header__busket-icon js-popup-basket-link" href="#">
                         <i class="icon-basket-red"></i>
                         <span>12</span>
                     </a>
@@ -1807,6 +1807,65 @@
         </div>
     </div>
 </div>
-
+<div class="popup popup_basket js-popup js-popup-basket">
+    <div class="popup__top">
+        <span>Корзина</span>
+        <button class="popup__close js-close-popup"></button>
+    </div>
+    <div class="popup__main">
+        <div class="basket">
+            <div class="basket__img">
+                <a href="#">
+                    <img src="img/prod2.png" alt="" width="94">
+                </a>
+            </div>
+            <div class="basket__main">
+                <h2 class="basket__title"><a href="#">Сетевой ресивер Marantz MS 7000 Silver White</a></h2>
+                <div class="basket__price">
+                    <span class="basket__price-one">120 500 <sub>грн</sub></span>
+                    <span class="busket__multiply">X</span>
+                    <div class="choose js-choose" data-max-number="9">
+                        <input type="text" class="choose__input" value="3" readonly="">
+                        <button class="choose__plus js-plus"></button>
+                        <button class="choose__minus js-minus"></button>
+                    </div>
+                    <span class="busket__equal">=</span>
+                    <span class="basket__summa">361 500 <sub>грн</sub></span>
+                </div>
+            </div>
+            <button class="busket__del js-del-busket-item"></button>
+        </div>
+        <div class="basket">
+            <div class="basket__img">
+                <a href="#">
+                    <img src="img/prod2.png" alt="" width="94">
+                </a>
+            </div>
+            <div class="basket__main">
+                <h2 class="basket__title"><a href="#">Сетевой ресивер Marantz MS 7000 Silver White</a></h2>
+                <div class="basket__price">
+                    <span class="basket__price-one">120 500 <sub>грн</sub></span>
+                    <span class="busket__multiply">X</span>
+                    <div class="choose js-choose" data-max-number="9">
+                        <input type="text" class="choose__input" value="3" readonly="">
+                        <button class="choose__plus js-plus"></button>
+                        <button class="choose__minus js-minus"></button>
+                    </div>
+                    <span class="busket__equal">=</span>
+                    <span class="basket__summa">361 500 <sub>грн</sub></span>
+                </div>
+            </div>
+            <button class="busket__del js-del-busket-item"></button>
+        </div>
+    </div>
+    <div class="popup__btns">
+        <input type="submit" class="btn" value="Оформить заказ">
+        <a href="#" class="pseudo-link">Очистить корзину</a>
+        <div class="final-price">
+            <span>Всего к оплате:</span>
+            <strong>961 500 <sub>грн</sub></strong>
+        </div>
+    </div>
+</div>
 </body>
 </html>

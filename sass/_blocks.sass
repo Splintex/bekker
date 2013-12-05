@@ -26,6 +26,9 @@
         font-weight: bold
         color: $black
         font: bold 15px Arial,sans-serif
+.input_middle
+    padding: 6px 16px 7px
+    font-size: 13px
         
 .icon-glass
     display: inline-block
@@ -603,7 +606,7 @@
     position: relative
     display: inline-block
     padding-right: 14px
-    
+    background: #747475
 .drop-list__btn
     position: relative
     display: block
@@ -622,8 +625,8 @@
     &:before
         right: -15px
         top: 0
+        bottom: 0
         width: 13px
-        height: 17px
         background: #747475
         border-right: 1px solid #848484 
     &:after
@@ -719,7 +722,6 @@
             text-decoration: none 
             +g($yellow_light, $yellow)
         &.is-inactive
-            cursor: default
             color: #ccc 
     .pagin__nav
         width: auto
@@ -780,6 +782,8 @@
     a
         display: inline-block
         border-bottom: 1px dotted 
+        &:hover
+            border-bottom-color: transparent 
 .checkbox_mod
     input
         &:checked
@@ -826,11 +830,11 @@
 .item-row__img
     float: left
     width: 200px
-    height: 200px
+    height: 170px
     +border-box
     overflow: hidden
     text-align: center
-    line-height: 200px
+    line-height: 170px
     margin-right: -1px
     border-right: 1px solid #f4f4f4
     &:hover
@@ -854,7 +858,7 @@
             text-decoration: none
 .item-row__left
     float: left
-    padding: 15px 15px 15px 20px 
+    padding: 14px 15px 6px 20px 
     width: 66%
     +border-box
     color: $gray 
@@ -875,6 +879,7 @@
         font-size: 11px
         display: inline-block
         color: $gray
+        text-decoration: none
         border-bottom: 1px dotted
         &:hover
             border-bottom: 0
@@ -949,7 +954,7 @@
     display: none
     left: 0
     right: 0
-    top: 40px
+    top: 36px
     z-index: 100
     border: 2px solid #d0d0d0
     background: #fff
@@ -962,9 +967,11 @@
             background: #eee
             
 .input_textarea
-    resize: vertical
-    min-height: 125px
-    max-height: 250px
+    //resize: vertical
+    //min-height: 125px
+    //max-height: 250px
+    resize: none
+    height: 125px
     clear: both
 .textarea-wrap
     padding-top: 17px
